@@ -1,0 +1,31 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(-45deg, #f5f5f5, #e0e0e0, #f0f0f0, #e8e8e8);
+    background-size: 400% 400%;
+    animation: gradient-bg 15s ease infinite;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Additional styles for header, sections, and animations can be added here */
