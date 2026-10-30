@@ -90,6 +90,83 @@
     --shadow-gold: 0 8px 25px rgba(180, 140, 54, 0.15);
 }
 
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+        --bg-base: #f8fafc;
+        --bg-surface: #ffffff;
+        --bg-card: #ffffff;
+        --bg-card-hover: #f1f5f9;
+        --bg-card-muted: #f8fafc;
+        
+        --border-subtle: #e2e8f0;
+        --border-medium: #cbd5e1;
+        --border-accent: rgba(180, 140, 54, 0.4);
+        --border-focus: #b48c36;
+
+        --text-primary: #0f172a;
+        --text-secondary: #334155;
+        --text-muted: #64748b;
+        --text-inverse: #ffffff;
+
+        --gold-primary: #b48c36;
+        --gold-light: #dfc27d;
+        --gold-dark: #8a6519;
+        --gold-gradient: linear-gradient(135deg, #c5a059 0%, #8a6519 100%);
+        --gold-glow: rgba(180, 140, 54, 0.12);
+
+        --steel-primary: #0284c7;
+        --steel-dark: #0369a1;
+        --steel-gradient: linear-gradient(135deg, #0284c7 0%, #0c4a6e 100%);
+
+        --badge-bg: #f1f5f9;
+        --badge-border: #e2e8f0;
+        --badge-text: #334155;
+
+        --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+        --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.06);
+        --shadow-lg: 0 14px 35px rgba(0, 0, 0, 0.08);
+        --shadow-gold: 0 8px 25px rgba(180, 140, 54, 0.15);
+    }
+}
+
+/* Explicit Dark Theme Variables */
+[data-theme="dark"] {
+    --bg-base: #0a0e17;
+    --bg-surface: #111726;
+    --bg-card: #151d30;
+    --bg-card-hover: #1a243b;
+    --bg-card-muted: #1e293b;
+    
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-medium: rgba(255, 255, 255, 0.14);
+    --border-accent: rgba(212, 175, 55, 0.4);
+    --border-focus: #c5a059;
+
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --text-inverse: #0a0e17;
+
+    --gold-primary: #d4af37;
+    --gold-light: #f3e5ab;
+    --gold-dark: #aa820a;
+    --gold-gradient: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+    --gold-glow: rgba(212, 175, 55, 0.15);
+
+    --steel-primary: #38bdf8;
+    --steel-dark: #0284c7;
+    --steel-gradient: linear-gradient(135deg, #38bdf8 0%, #0369a1 100%);
+
+    --badge-bg: rgba(255, 255, 255, 0.05);
+    --badge-border: rgba(255, 255, 255, 0.1);
+    --badge-text: #e2e8f0;
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
+    --shadow-gold: 0 8px 25px rgba(212, 175, 55, 0.2);
+}
+
 /* Base Reset & Typography */
 * {
     margin: 0;
@@ -131,6 +208,12 @@ body::before {
 
 [data-theme="light"] body::before {
     background: radial-gradient(ellipse at top, rgba(180, 140, 54, 0.08), transparent 70%);
+}
+
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) body::before {
+        background: radial-gradient(ellipse at top, rgba(180, 140, 54, 0.08), transparent 70%);
+    }
 }
 
 /* Main Container */
@@ -666,6 +749,12 @@ body::before {
     color: var(--gold-dark);
 }
 
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) .pill-gold {
+        color: var(--gold-dark);
+    }
+}
+
 /* AI Workflows & Practical Applications */
 .ai-workflow-grid {
     display: grid;
@@ -759,6 +848,12 @@ body::before {
 
 [data-theme="light"] .ai-card-list code {
     color: var(--gold-dark);
+}
+
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) .ai-card-list code {
+        color: var(--gold-dark);
+    }
 }
 
 .ai-metrics-banner {

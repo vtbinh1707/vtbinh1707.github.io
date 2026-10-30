@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi" data-theme="dark">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,23 @@
     <title>Võ Thanh Bình (Drake) — Lead Software Architect | Online CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/107618367?v=4">
+
+    <!-- Instant Theme Detection (Defaults to Device/System Theme, Prevents FOUC) -->
+    <script>
+        (function() {
+            try {
+                const savedTheme = localStorage.getItem('drake_theme');
+                if (savedTheme === 'light' || savedTheme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', savedTheme);
+                } else {
+                    const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    document.documentElement.setAttribute('data-theme', systemDark ? 'dark' : 'light');
+                }
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
 </head>
 <body>
 
@@ -824,24 +841,64 @@
 
     <!-- Theme Toggle & Modular Content Script -->
     <script>
-        // Theme Switcher (Executive Dark & Light)
+        // Theme Management: Default to Machine/System Theme + Full Dark/Light Support
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
         const htmlElement = document.documentElement;
 
-        // Load saved theme or default to dark
-        const savedTheme = localStorage.getItem('drake_theme') || 'dark';
-        htmlElement.setAttribute('data-theme', savedTheme);
-        themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        function updateThemeUI(theme, isAuto = false) {
+            htmlElement.setAttribute('data-theme', theme);
+            if (themeIcon) {
+                // In dark mode: show sun icon (click to switch to light)
+                // In light mode: show moon icon (click to switch to dark)
+                themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+            }
+            if (themeToggle) {
+                const currentText = theme === 'dark' ? 'Tối' : 'Sáng';
+                const nextText = theme === 'dark' ? 'Sáng' : 'Tối';
+                const autoText = isAuto ? ' (Mặc định theo hệ thống máy)' : '';
+                themeToggle.title = `Giao diện hiện tại: ${currentText}${autoText} • Nhấn để chuyển sang giao diện ${nextText}`;
+                themeToggle.setAttribute('aria-label', `Chuyển sang giao diện ${nextText}`);
+            }
+        }
 
+        function getInitialTheme() {
+            const savedTheme = localStorage.getItem('drake_theme');
+            if (savedTheme === 'light' || savedTheme === 'dark') {
+                return { theme: savedTheme, isAuto: false };
+            }
+            const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            return { theme: systemDark ? 'dark' : 'light', isAuto: true };
+        }
+
+        // Initialize theme UI
+        const initialTheme = getInitialTheme();
+        updateThemeUI(initialTheme.theme, initialTheme.isAuto);
+
+        // Manual Theme Toggle Listener
         if (themeToggle) {
             themeToggle.addEventListener('click', () => {
-                const currentTheme = htmlElement.getAttribute('data-theme');
+                const currentTheme = htmlElement.getAttribute('data-theme') || 'dark';
                 const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                htmlElement.setAttribute('data-theme', newTheme);
                 localStorage.setItem('drake_theme', newTheme);
-                themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+                updateThemeUI(newTheme, false);
             });
+        }
+
+        // Real-time listener for OS/Device theme change (active when user hasn't explicitly locked preference)
+        if (window.matchMedia) {
+            const systemMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            const handleSystemThemeChange = (e) => {
+                if (!localStorage.getItem('drake_theme')) {
+                    const newTheme = e.matches ? 'dark' : 'light';
+                    updateThemeUI(newTheme, true);
+                }
+            };
+            if (systemMediaQuery.addEventListener) {
+                systemMediaQuery.addEventListener('change', handleSystemThemeChange);
+            } else if (systemMediaQuery.addListener) {
+                systemMediaQuery.addListener(handleSystemThemeChange);
+            }
         }
 
         // Modular content loader for HTTP/HTTPS environments
