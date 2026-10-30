@@ -666,6 +666,150 @@ body::before {
     color: var(--gold-dark);
 }
 
+/* AI Workflows & Practical Applications */
+.ai-workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.ai-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-focus);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.ai-card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gold-primary);
+    margin-bottom: 12px;
+}
+
+.ai-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    line-height: 1.35;
+}
+
+.ai-card-desc {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.ai-card-list {
+    list-style: none;
+    margin-bottom: 18px;
+}
+
+.ai-card-list li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 8px;
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.ai-card-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--steel-primary);
+    font-weight: 700;
+}
+
+.ai-card-list strong {
+    color: var(--text-secondary);
+}
+
+.ai-card-list code {
+    background: var(--badge-bg);
+    border: 1px solid var(--border-subtle);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--gold-light);
+    font-family: 'Space Grotesk', monospace;
+}
+
+[data-theme="light"] .ai-card-list code {
+    color: var(--gold-dark);
+}
+
+.ai-metrics-banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 18px 22px;
+    margin-top: 10px;
+}
+
+.ai-metric-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.ai-metric-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--gold-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.ai-metric-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.ai-metric-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+.ai-metric-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
 /* Executive Timeline */
 .timeline {
     position: relative;
@@ -931,7 +1075,9 @@ body::before {
     .stat-box,
     .system-card,
     .matrix-card,
-    .principle-box {
+    .principle-box,
+    .ai-card,
+    .ai-metrics-banner {
         background: #ffffff !important;
         border: 1px solid #cbd5e1 !important;
         box-shadow: none !important;
