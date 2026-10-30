@@ -1,544 +1,714 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hồ sơ Năng lực Trực tuyến của Võ Thanh Bình (Drake) - Lead Software Architect, Chuyên gia Kiến trúc ERP Doanh nghiệp, AI Multi-Agent & IoT Công nghiệp.">
+    <meta name="description" content="Hồ sơ Năng lực Trực tuyến của Võ Thanh Bình (Drake) — Lead Software Architect, Chuyên gia Kiến trúc ERP Doanh nghiệp, AI Multi-Agent & IoT Công nghiệp.">
     <meta name="author" content="Võ Thanh Bình (Drake)">
-    <meta property="og:title" content="Võ Thanh Bình (Drake) - Lead Software Architect | Online CV">
-    <meta property="og:description" content="Chuyên gia Thiết kế Kiến trúc ERP Doanh nghiệp, Hệ sinh thái AI Multi-Agent & Nền tảng IoT Công nghiệp.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Võ Thanh Bình (Drake) — Lead Software Architect | Executive CV">
+    <meta property="og:description" content="Hồ sơ Năng lực Kiến trúc sư Hệ thống ERP Doanh nghiệp, Nền tảng AI Multi-Agent & IoT Công nghiệp.">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/107618367?v=4">
     <meta property="og:url" content="https://vtbinh1707.github.io">
-    <title>Võ Thanh Bình (Drake) | Lead Software Architect - Online CV</title>
+    <meta property="og:type" content="profile">
+
+    <title>Võ Thanh Bình (Drake) — Lead Software Architect | Online CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/107618367?v=4">
 </head>
 <body>
-    <!-- Background Particle Animation -->
-    <div class="particles" id="particles"></div>
 
     <div class="container">
-        <!-- Header / Hero Section -->
-        <header class="header card-3d">
-            <div id="personal-info" style="display: flex; width: 100%; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-                <div class="profile-info card-3d-content">
-                    <h1>Võ Thanh Bình (Drake)</h1>
-                    <h3 class="profile-subtitle">Lead Software Architect | Chief Solutions & AI Systems Engineer</h3>
-                    <div class="profile-tagline">🚀 Kiến trúc sư Hệ thống ERP • Nền tảng AI Multi-Agent • IoT Công nghiệp</div>
-                    
-                    <div class="contact-info">
-                        <div class="hover-lift">
-                            <span>📧</span>
-                            <a href="mailto:drake.binh@feavn.com.vn" style="color: inherit; text-decoration: none;">drake.binh@feavn.com.vn</a>
-                        </div>
-                        <div class="hover-lift">
-                            <span>📱</span>
-                            <a href="tel:0944036685" style="color: inherit; text-decoration: none;">(+84) 944 036 685</a>
-                        </div>
-                        <div class="hover-lift">
-                            <span>📍</span>
-                            <span>Bình Dương / TP. HCM, Việt Nam</span>
-                        </div>
-                        <div class="hover-lift">
-                            <span>🐙</span>
-                            <a href="https://github.com/vtbinh1707" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">github.com/vtbinh1707</a>
-                        </div>
-                        <div class="hover-lift">
-                            <span>🏢</span>
-                            <span>Far Eastern Apparel Vietnam (FEAVN)</span>
-                        </div>
+        <!-- Top Navigation Bar -->
+        <nav class="top-nav">
+            <a href="#" class="brand-monogram">
+                <span class="monogram-badge">VB</span>
+                <span>VÕ THANH BÌNH</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#overview">Tổng quan</a></li>
+                <li><a href="#systems">Hệ thống</a></li>
+                <li><a href="#experience">Kinh nghiệm</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#principles">Triết lý</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle-btn" title="Chuyển đổi giao diện (Sáng / Tối)" aria-label="Toggle Theme">
+                    <span id="themeIcon">☀️</span>
+                </button>
+                <button onclick="window.print()" class="btn btn-secondary" style="padding: 7px 16px; font-size: 0.82rem;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                    <span>In / PDF</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Executive Header Profile Card -->
+        <header class="header-card" id="overview">
+            <div id="personal-info" class="header-flex">
+                <div class="header-main">
+                    <div class="status-pill">
+                        <span class="status-dot"></span>
+                        <span>Sẵn sàng cố vấn &amp; Thiết kế Kiến trúc</span>
                     </div>
-                    
-                    <div class="header-actions">
-                        <button onclick="window.print()" class="action-btn btn-primary">
-                            <span>📄</span>
+                    <h1 class="header-title">Võ Thanh Bình (Drake)</h1>
+                    <div class="header-role">Lead Software Architect • Chief Solutions &amp; AI Systems Engineer</div>
+                    <p class="header-bio">
+                        Chuyên gia thiết kế kiến trúc hệ thống công nghệ thông tin quy mô lớn, ERP sản xuất phân tán và nền tảng AI Multi-Agent. Vận hành với triết lý kiến trúc <em>"Zero-Specialized-Case"</em> — chuẩn hóa, ổn định và tối ưu hóa hiệu năng bền vững.
+                    </p>
+
+                    <div class="contact-row">
+                        <a href="mailto:drake.binh@feavn.com.vn" class="contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>drake.binh@feavn.com.vn</span>
+                        </a>
+                        <a href="tel:0944036685" class="contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <span>(+84) 944 036 685</span>
+                        </a>
+                        <span class="contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Bình Dương / TP. Hồ Chí Minh</span>
+                        </span>
+                        <a href="https://github.com/vtbinh1707" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <span>github.com/vtbinh1707</span>
+                        </a>
+                    </div>
+
+                    <div class="cta-group">
+                        <button onclick="window.print()" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
                             <span>Tải / In CV (PDF)</span>
                         </button>
-                        <a href="https://github.com/vtbinh1707" target="_blank" rel="noopener noreferrer" class="action-btn btn-dark">
-                            <span>🐙</span>
+                        <a href="https://github.com/vtbinh1707" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                             <span>GitHub Profile</span>
                         </a>
-                        <a href="mailto:drake.binh@feavn.com.vn" class="action-btn btn-outline">
-                            <span>✉️</span>
-                            <span>Gửi Tin Nhắn</span>
+                        <a href="mailto:drake.binh@feavn.com.vn" class="btn btn-outline">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            <span>Liên hệ Trực tiếp</span>
                         </a>
                     </div>
                 </div>
-                <div class="profile-image card-3d-content">
-                    <img src="https://avatars.githubusercontent.com/u/107618367?v=4" alt="Võ Thanh Bình (Drake)" onerror="this.onerror=null; this.src='https://github.com/vtbinh1707.png';">
+                <div class="header-avatar">
+                    <div class="avatar-border"></div>
+                    <img src="https://avatars.githubusercontent.com/u/107618367?v=4" alt="Võ Thanh Bình (Drake)" class="avatar-img" onerror="this.onerror=null; this.src='https://github.com/vtbinh1707.png';">
                 </div>
             </div>
         </header>
 
-        <!-- Key Metrics & Impact Bar -->
-        <div class="stats-grid">
-            <div class="stat-card hover-lift">
-                <div class="stat-num">30,000+</div>
-                <div class="stat-label">Enterprise Commits</div>
+        <!-- Executive Impact Stats Ribbon -->
+        <div class="stats-ribbon">
+            <div class="stat-box">
+                <div class="stat-figure">30,000+</div>
+                <div class="stat-title">Enterprise Commits</div>
+                <div class="stat-sub">Mã nguồn sản xuất thực chiến</div>
             </div>
-            <div class="stat-card hover-lift">
-                <div class="stat-num">7+</div>
-                <div class="stat-label">Hệ thống Cốt lõi Vận hành</div>
+            <div class="stat-box">
+                <div class="stat-figure">07+</div>
+                <div class="stat-title">Core Systems</div>
+                <div class="stat-sub">Hệ thống trọng yếu quy mô lớn</div>
             </div>
-            <div class="stat-card hover-lift">
-                <div class="stat-num">10+</div>
-                <div class="stat-label">AI Agents & MCP Tools</div>
+            <div class="stat-box">
+                <div class="stat-figure">10+</div>
+                <div class="stat-title">AI Agents &amp; MCP</div>
+                <div class="stat-sub">Hệ sinh thái tự động hóa sâu</div>
             </div>
-            <div class="stat-card hover-lift">
-                <div class="stat-num">4+</div>
-                <div class="stat-label">Năm Kiến Trúc Sư Trưởng</div>
+            <div class="stat-box">
+                <div class="stat-figure">04+ Năm</div>
+                <div class="stat-title">Lead Architect</div>
+                <div class="stat-sub">Lãnh đạo kỹ thuật tập đoàn</div>
             </div>
         </div>
 
-        <!-- About Me Section -->
-        <section class="about hover-lift">
-            <h2>Giới thiệu Bản thân & Định hướng</h2>
-            <p style="font-size: 1.02rem; line-height: 1.8; color: #334155;">
-                Tôi là <strong>Võ Thanh Bình (Drake)</strong> — Kiến trúc sư trưởng giải pháp phần mềm (Lead Software Architect) với hơn 4 năm kinh nghiệm thiết kế, xây dựng và vận hành các hệ thống công nghệ thông tin doanh nghiệp quy mô lớn (Enterprise ERP, ClickOnce Smart Client, Industrial IoT và Nền tảng AI Multi-Agent).
+        <!-- Executive Summary Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Tuyên ngôn &amp; Tầm nhìn Kiến trúc</h2>
+                <span class="section-subtitle">Executive Statement</span>
+            </div>
+            <p style="font-size: 1.02rem; line-height: 1.85; margin-bottom: 14px;">
+                Tôi là <strong>Võ Thanh Bình (Drake)</strong> — Kiến trúc sư trưởng giải pháp phần mềm (Lead Software Architect) chuyên sâu về xây dựng các hệ thống sản xuất công nghiệp và nền tảng trí tuệ nhân tạo tác tử (Multi-Agent Systems) cho doanh nghiệp quy mô lớn.
             </p>
-            <p style="font-size: 1.02rem; line-height: 1.8; color: #334155; margin-top: 10px;">
-                Tôi theo đuổi nguyên lý kiến trúc <strong>"Zero-Specialized-Case"</strong>: nói không với các bản vá chắp vá tình thế, luôn hướng đến thiết kế tổng quát, module hóa tối đa và chuẩn hóa cấu trúc dữ liệu để hệ thống vận hành bền vững, chịu tải cao và không phát sinh nợ kỹ thuật. Với hơn <strong>30,000+ lượt commit</strong> thực chiến trên các hệ thống sản xuất tại tập đoàn may mặc quốc tế, tôi kết hợp nhuần nhuyễn giữa tư duy kiến trúc nền tảng và năng lực triển khai công nghệ AI hiện đại vào thực tiễn kinh doanh.
+            <p style="font-size: 1.02rem; line-height: 1.85; color: var(--text-muted);">
+                Trải qua hơn <strong>30.000+ lượt commit</strong> trên các hệ thống sản xuất liên tục (High Availability 24/7) tại tập đoàn may mặc quốc tế, tôi khẳng định rằng: <em>Giá trị của một kiến trúc sư không nằm ở các bản vá chắp vá tình thế, mà nằm ở năng lực chuẩn hóa nền tảng, kiến tạo giải pháp tổng quát có thể tự động mở rộng theo thời gian mà không sinh ra nợ kỹ thuật.</em>
             </p>
         </section>
 
-        <!-- Featured Systems & Key Projects -->
-        <section class="hover-lift">
-            <h2>Hệ thống Trọng yếu & Dự án Tiêu biểu</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card hover-lift">
+        <!-- Flagship Systems & Key Architecture Showcase -->
+        <section class="section" id="systems">
+            <div class="section-header">
+                <h2 class="section-title">Hệ thống Trọng yếu &amp; Dự án Tiêu biểu</h2>
+                <span class="section-subtitle">Flagship Architecture</span>
+            </div>
+
+            <div class="systems-grid">
+                <!-- System 1 -->
+                <div class="system-card">
                     <div>
-                        <div class="project-header">
-                            <span class="project-icon">🤖</span>
-                            <div>
-                                <div class="project-title">DrakeAgent & Phoenix Ecosystem</div>
-                                <div class="project-role">Founder & Chief Architect • 2024 - Hiện tại</div>
-                            </div>
+                        <div class="system-header">
+                            <span class="system-type">AI Multi-Agent Ecosystem</span>
+                            <h3 class="system-name">DrakeAgent &amp; Phoenix AI Platform</h3>
+                            <div class="system-role">Founder &amp; Chief Architect • 2024 — Hiện tại</div>
                         </div>
-                        <p class="project-desc">
-                            Nền tảng tác tử thông minh đa nhiệm (Multi-Agent System) tích hợp trực tiếp vào quy trình làm việc doanh nghiệp qua giao thức Model Context Protocol (MCP). Tự động phân tích task, review Merge Request, đối soát release script SQL và điều phối công việc kỹ thuật.
+                        <p class="system-desc">
+                            Nền tảng tác tử thông minh thế hệ mới tích hợp trực tiếp vào quy trình kỹ thuật qua giao thức Model Context Protocol (MCP). Tự động phân tích task, review Merge Request, đối soát release script SQL và điều phối pipeline kỹ thuật.
                         </p>
+                        <div class="system-impact">
+                            <strong>Hiệu quả:</strong> Giảm 65% thời gian tra soát nghiệp vụ kỹ thuật và ngăn chặn 100% rủi ro xung đột script release trên Production.
+                        </div>
                     </div>
-                    <div class="tech-badges">
-                        <span class="tech-badge highlight">Next.js 15</span>
-                        <span class="tech-badge highlight">TypeScript</span>
-                        <span class="tech-badge highlight">Gemini API</span>
-                        <span class="tech-badge">Model Context Protocol</span>
-                        <span class="tech-badge">SQLite</span>
-                        <span class="tech-badge">GitLab / Jira API</span>
+                    <div class="pill-group">
+                        <span class="pill pill-gold">Next.js 15</span>
+                        <span class="pill">TypeScript</span>
+                        <span class="pill">Gemini API</span>
+                        <span class="pill">MCP Ecosystem</span>
+                        <span class="pill">GitLab API</span>
+                        <span class="pill">SQLite</span>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card hover-lift">
+                <!-- System 2 -->
+                <div class="system-card">
                     <div>
-                        <div class="project-header">
-                            <span class="project-icon">🏭</span>
-                            <div>
-                                <div class="project-title">FEA Enterprise ERP Platform</div>
-                                <div class="project-role">Lead Architect & Core Dev • 7,550+ Commits</div>
-                            </div>
+                        <div class="system-header">
+                            <span class="system-type">Core Enterprise ERP</span>
+                            <h3 class="system-name">FEA Enterprise ERP Platform</h3>
+                            <div class="system-role">Lead Architect &amp; Core Dev • 7,550+ Commits</div>
                         </div>
-                        <p class="project-desc">
-                            Hệ thống ERP sản xuất trung tâm cho chuỗi nhà máy quốc tế (mua hàng, kho vận, tài chính, sản xuất, nhân sự). Tối ưu hóa truy vấn SQL Server phân tán, liên kết cơ sở dữ liệu liên nhà máy (Linked Server) và bảo vệ an toàn giao dịch khối lượng lớn.
+                        <p class="system-desc">
+                            Hệ thống ERP sản xuất trung tâm điều hành toàn diện chuỗi nhà máy quốc tế (Mua hàng, Kho vận, Tài chính, Kế hoạch, Sản xuất, Nhân sự). Tối ưu hóa truy vấn SQL Server phân tán và cấu trúc liên kết cơ sở dữ liệu liên nhà máy.
                         </p>
+                        <div class="system-impact">
+                            <strong>Hiệu quả:</strong> Đảm bảo toàn vẹn dữ liệu cho hàng triệu chứng từ/tháng, giảm 40% độ trễ xử lý các báo cáo tài chính và sản xuất lớn.
+                        </div>
                     </div>
-                    <div class="tech-badges">
-                        <span class="tech-badge highlight">C# / .NET</span>
-                        <span class="tech-badge highlight">ASP.NET MVC</span>
-                        <span class="tech-badge highlight">SQL Server Tuning</span>
-                        <span class="tech-badge">DevExtreme</span>
-                        <span class="tech-badge">Razor</span>
-                        <span class="tech-badge">Linked Server</span>
+                    <div class="pill-group">
+                        <span class="pill pill-gold">C# / .NET</span>
+                        <span class="pill">ASP.NET MVC</span>
+                        <span class="pill">SQL Server Tuning</span>
+                        <span class="pill">DevExtreme</span>
+                        <span class="pill">Linked Server</span>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card hover-lift">
+                <!-- System 3 -->
+                <div class="system-card">
                     <div>
-                        <div class="project-header">
-                            <span class="project-icon">💻</span>
-                            <div>
-                                <div class="project-title">Apparel Global Platform (AGP)</div>
-                                <div class="project-role">Lead Architect & Release Manager • 7,140+ Commits</div>
-                            </div>
+                        <div class="system-header">
+                            <span class="system-type">Smart Client Desktop</span>
+                            <h3 class="system-name">Apparel Global Platform (AGP)</h3>
+                            <div class="system-role">Lead Architect &amp; Release Manager • 7,140+ Commits</div>
                         </div>
-                        <p class="project-desc">
-                            Hệ thống ứng dụng Desktop ClickOnce quy mô lớn triển khai trên hàng trăm trạm máy tính nhà máy. Quản trị phân hệ dữ liệu sản phẩm (PDM), trạng thái vải và dây chuyền đóng gói với pipeline tự động nâng phiên bản không gián đoạn.
+                        <p class="system-desc">
+                            Hệ thống ứng dụng Desktop ClickOnce quy mô lớn triển khai trên hàng trăm trạm máy tính nhà xưởng. Quản trị phân hệ dữ liệu sản phẩm (PDM), trạng thái vải, quy trình đóng gói và pipeline nâng phiên bản tự động không gián đoạn.
                         </p>
+                        <div class="system-impact">
+                            <strong>Hiệu quả:</strong> Triển khai cập nhật tính năng tức thời đến hàng trăm máy trạm nhà xưởng mà không phát sinh thời gian chết (Zero Downtime).
+                        </div>
                     </div>
-                    <div class="tech-badges">
-                        <span class="tech-badge highlight">C# WinForms</span>
-                        <span class="tech-badge highlight">ClickOnce</span>
-                        <span class="tech-badge">Enterprise PDM</span>
-                        <span class="tech-badge">CI/CD Release</span>
-                        <span class="tech-badge">Local Cache</span>
+                    <div class="pill-group">
+                        <span class="pill pill-gold">C# WinForms</span>
+                        <span class="pill">ClickOnce CI/CD</span>
+                        <span class="pill">Enterprise PDM</span>
+                        <span class="pill">Local Cache</span>
+                        <span class="pill">T-SQL</span>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-card hover-lift">
+                <!-- System 4 -->
+                <div class="system-card">
                     <div>
-                        <div class="project-header">
-                            <span class="project-icon">🧵</span>
-                            <div>
-                                <div class="project-title">PPS AutoSewingPlan Algorithm</div>
-                                <div class="project-role">Algorithm Creator & Core Architect • 1,580+ Commits</div>
-                            </div>
+                        <div class="system-header">
+                            <span class="system-type">Optimization Algorithm Engine</span>
+                            <h3 class="system-name">PPS AutoSewingPlan Algorithm</h3>
+                            <div class="system-role">Algorithm Creator &amp; Core Architect • 1,580+ Commits</div>
                         </div>
-                        <p class="project-desc">
-                            Thuật toán thông minh tự động xếp lịch và layout chuyền may theo thời gian thực. Tự động tính toán các ràng buộc phức tạp giữa ngày về nguyên phụ liệu, năng lực chuyền may, quy tắc cân bằng chuyền liên tục và đối soát đơn hàng.
+                        <p class="system-desc">
+                            Thuật toán thông minh tự động tối ưu hóa sắp xếp layout và điều độ chuyền may theo thời gian thực. Cân bằng đồng thời các ràng buộc phức tạp giữa tiến độ nguyên phụ liệu, năng lực chuyền và đối soát tiến độ đơn hàng.
                         </p>
+                        <div class="system-impact">
+                            <strong>Hiệu quả:</strong> Rút ngắn thời gian lập kế hoạch chuyền từ 2 ngày xuống 15 phút, tối ưu hóa công suất máy móc chuyền may lên 92%.
+                        </div>
                     </div>
-                    <div class="tech-badges">
-                        <span class="tech-badge highlight">C# Algo Engine</span>
-                        <span class="tech-badge highlight">React.js</span>
-                        <span class="tech-badge">Constraint Optimization</span>
-                        <span class="tech-badge">Excel Simulation</span>
-                        <span class="tech-badge">IIS Cluster</span>
+                    <div class="pill-group">
+                        <span class="pill pill-gold">C# Algo Engine</span>
+                        <span class="pill">React.js</span>
+                        <span class="pill">Constraint Optimization</span>
+                        <span class="pill">Excel Modeling</span>
+                        <span class="pill">IIS Cluster</span>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="project-card hover-lift">
+                <!-- System 5 -->
+                <div class="system-card">
                     <div>
-                        <div class="project-header">
-                            <span class="project-icon">📱</span>
-                            <div>
-                                <div class="project-title">ITS.WebService & Mobile Industrial Suite</div>
-                                <div class="project-role">Backend Lead Architect • 2,790+ Commits</div>
-                            </div>
+                        <div class="system-header">
+                            <span class="system-type">Industrial Mobile Backend</span>
+                            <h3 class="system-name">ITS.WebService &amp; Mobile Suite</h3>
+                            <div class="system-role">Backend Lead Architect • 2,790+ Commits</div>
                         </div>
-                        <p class="project-desc">
-                            Cụm Microservices & RESTful API trung tâm cung cấp dịch vụ cho toàn bộ ứng dụng di động công nghiệp: Kiểm tra chất lượng (ITS.Mobile.QC), Điều hành sản xuất thông minh (ITSmart), Quản lý nguyên phụ liệu (CW, FW, SMM).
+                        <p class="system-desc">
+                            Cụm Microservices &amp; RESTful API trung tâm cung cấp dịch vụ cho toàn bộ ứng dụng di động công nghiệp: Kiểm tra chất lượng (ITS.Mobile.QC), Điều hành sản xuất thông minh (ITSmart), Quản lý nguyên phụ liệu (CW, FW, SMM).
                         </p>
+                        <div class="system-impact">
+                            <strong>Hiệu quả:</strong> Xử lý đồng thời hơn 500,000 lượt quét barcode/RFID và nhập liệu kiểm phẩm hàng ngày với độ trễ phản hồi dưới 80ms.
+                        </div>
                     </div>
-                    <div class="tech-badges">
-                        <span class="tech-badge highlight">C# Web API</span>
-                        <span class="tech-badge highlight">Microservices</span>
-                        <span class="tech-badge">SignalR / Socket</span>
-                        <span class="tech-badge">Handheld Devices</span>
-                        <span class="tech-badge">High Concurrency</span>
+                    <div class="pill-group">
+                        <span class="pill pill-gold">C# Web API</span>
+                        <span class="pill">Microservices</span>
+                        <span class="pill">SignalR / Socket</span>
+                        <span class="pill">Handheld Scanners</span>
+                        <span class="pill">High Concurrency</span>
                     </div>
                 </div>
 
-                <!-- Project 6 -->
-                <div class="project-card hover-lift">
+                <!-- System 6 -->
+                <div class="system-card">
                     <div>
-                        <div class="project-header">
-                            <span class="project-icon">📡</span>
-                            <div>
-                                <div class="project-title">Smart Fabric Warehouse & RFID IoT</div>
-                                <div class="project-role">IoT Solution Architect</div>
-                            </div>
+                        <div class="system-header">
+                            <span class="system-type">Industrial IoT &amp; Hardware</span>
+                            <h3 class="system-name">Smart Fabric Warehouse &amp; RFID IoT</h3>
+                            <div class="system-role">IoT Solution Architect</div>
                         </div>
-                        <p class="project-desc">
-                            Hệ thống kiểm soát an toàn kim gãy (RFIDScanNeedleSystem), định vị và quản lý tồn kho cuộn vải thông minh bằng công nghệ sóng RFID tần số cao (Zebra RFID SDK, Impinj Speedway) kết hợp hệ thống in mã vạch công nghiệp ZPL.
+                        <p class="system-desc">
+                            Hệ thống kiểm soát an toàn kim gãy (RFIDScanNeedleSystem), định vị và quản lý tồn kho cuộn vải thông minh bằng công nghệ sóng RFID tần số cao (Zebra RFID SDK, Impinj Speedway Connect) kết hợp hệ thống in mã vạch ZPL công nghiệp.
                         </p>
+                        <div class="system-impact">
+                            <strong>Hiệu quả:</strong> Loại bỏ hoàn toàn lỗi sót kim gãy trong thành phẩm may xuất khẩu, tăng 70% tốc độ kiểm kê vị trí cuộn vải kho nguyên liệu.
+                        </div>
                     </div>
-                    <div class="tech-badges">
-                        <span class="tech-badge highlight">RFID Zebra SDK</span>
-                        <span class="tech-badge highlight">Impinj Speedway</span>
-                        <span class="tech-badge">Industrial Barcode</span>
-                        <span class="tech-badge">ZPL Engine</span>
-                        <span class="tech-badge">Hardware Integration</span>
+                    <div class="pill-group">
+                        <span class="pill pill-gold">RFID Zebra SDK</span>
+                        <span class="pill">Impinj Speedway</span>
+                        <span class="pill">ZPL Printing</span>
+                        <span class="pill">Barcode Scanner</span>
+                        <span class="pill">IoT Gateways</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Kinh nghiệm Thực chiến & Vị trí Trọng yếu</h2>
-
-            <div class="timeline-item hover-lift">
-                <h3>Lead Software Architect & Tech Lead</h3>
-                <p class="company">Far Eastern Apparel Vietnam (FEAVN) • Far Eastern Group</p>
-                <p class="date">Tháng 06/2022 - Hiện tại</p>
-                <p>Chịu trách nhiệm toàn diện về kiến trúc công nghệ và lãnh đạo phát triển hệ sinh thái phần mềm sản xuất công nghiệp quy mô lớn, phục vụ chuỗi nhà máy may mặc quốc tế với hàng nghìn người dùng và thiết bị IoT.</p>
-                
-                <ul style="margin: 12px 0 15px 20px; line-height: 1.7; color: #475569;">
-                    <li><strong>Core ERP Enterprise Platform (7,550+ commits):</strong> Thiết kế và mở rộng hệ thống ERP trung tâm (C# ASP.NET, DevExtreme, Razor, SQL Server). Tối ưu hóa hàng nghìn Stored Procedure phức tạp, thiết kế liên kết phân tán (Linked Server) giữa các nhà máy, giảm 40% độ trễ xử lý dữ liệu lớn.</li>
-                    <li><strong>Hệ thống Ứng dụng Thông minh AGP - ClickOnce (7,140+ commits):</strong> Kiến trúc trưởng hệ thống ứng dụng Desktop phân tán phục vụ toàn bộ chuyền may và văn phòng. Xây dựng quy trình tự động nâng version ClickOnce và phát hành CI/CD không gián đoạn.</li>
-                    <li><strong>Thuật toán Điều độ Chuyền may Tự động PPS (AutoSewingPlan):</strong> Trực tiếp sáng chế thuật toán tối ưu hóa sắp xếp layout chuyền may tự động theo thời gian thực; cân bằng đa biến số giữa tiến độ nguyên phụ liệu, năng lực chuyền và đối soát tiến độ đơn hàng.</li>
-                    <li><strong>Hệ sinh thái Mobile Industrial Backend (ITS.WebService - 2,790+ commits):</strong> Kiến trúc API Gateway và Microservices kết nối hàng loạt ứng dụng di động công nghiệp (App QC kiểm tra chất lượng, ITSmart, SMM, Barcode Scanner), phục vụ đồng thời hàng nghìn request từ thiết bị cầm tay.</li>
-                    <li><strong>Hệ thống IoT & Kho Vải Thông minh (Smart Warehouse):</strong> Triển khai giải pháp dò quét kim gãy an toàn (RFID Zebra SDK, Impinj Speedway Connect), quản lý vị trí cuộn vải thông minh theo thời gian thực và tích hợp lệnh in mã vạch ZPL công nghiệp.</li>
-                </ul>
-
-                <div class="tech-badges">
-                    <span class="tech-badge highlight">C# .NET</span>
-                    <span class="tech-badge highlight">ASP.NET MVC</span>
-                    <span class="tech-badge highlight">SQL Server Optimization</span>
-                    <span class="tech-badge">ClickOnce Architecture</span>
-                    <span class="tech-badge">DevExtreme</span>
-                    <span class="tech-badge">Industrial RFID</span>
-                    <span class="tech-badge">Microservices</span>
-                    <span class="tech-badge">ZPL Barcode</span>
-                </div>
+        <!-- Professional Experience Section -->
+        <section class="section" id="experience">
+            <div class="section-header">
+                <h2 class="section-title">Kinh nghiệm Lãnh đạo &amp; Thực chiến</h2>
+                <span class="section-subtitle">Career Milestones</span>
             </div>
 
-            <div class="timeline-item hover-lift">
-                <h3>Chief Architect & Founder — AI Multi-Agent Platform</h3>
-                <p class="company">DrakeAgent & Phoenix Ecosystem</p>
-                <p class="date">Năm 2024 - Hiện tại</p>
-                <p>Nghiên cứu và phát triển nền tảng tác tử thông minh (Multi-Agent System) tích hợp sâu vào quy trình DevOps và điều hành kỹ thuật thực tế cho doanh nghiệp.</p>
-                
-                <ul style="margin: 12px 0 15px 20px; line-height: 1.7; color: #475569;">
-                    <li><strong>Triết lý Kiến trúc Zero-Specialized-Case:</strong> Thiết kế engine AI tổng quát, loại bỏ hoàn toàn các nhánh code xử lý chắp vá cho từng ca đơn lẻ, giúp hệ thống mở rộng không giới hạn mà không phát sinh technical debt.</li>
-                    <li><strong>Giao thức Model Context Protocol (MCP):</strong> Xây dựng cụm MCP Servers tùy biến kết nối trực tiếp với GitLab API, Jira Issue Tracking, Mattermost Bot, SQLite và Workstation Sandbox execution.</li>
-                    <li><strong>Tự động hóa Quy trình Kỹ thuật:</strong> Triển khai pipeline tự động phân tích task, review Merge Request, đối soát và cảnh báo xung đột Release Script SQL, tự động kiểm tra key đa ngôn ngữ và tạo subtask kiểm thử.</li>
-                </ul>
+            <div class="timeline">
+                <!-- Role 1 -->
+                <div class="timeline-entry">
+                    <div class="timeline-node"></div>
+                    <span class="timeline-period">06/2022 — Hiện tại • Far Eastern Group</span>
+                    <h3 class="timeline-title">Lead Software Architect &amp; Tech Lead</h3>
+                    <div class="timeline-org">Far Eastern Apparel Vietnam (FEAVN)</div>
+                    <p class="timeline-summary">
+                        Đảm nhiệm vai trò kiến trúc sư trưởng và lãnh đạo kỹ thuật toàn diện cho hệ sinh thái phần mềm sản xuất công nghiệp may mặc quốc tế. Trực tiếp thiết kế nền tảng vận hành phục vụ hàng nghìn nhân sự, hàng chục nhà xưởng và cụm thiết bị IoT thông minh.
+                    </p>
 
-                <div class="tech-badges">
-                    <span class="tech-badge highlight">Next.js 15</span>
-                    <span class="tech-badge highlight">TypeScript</span>
-                    <span class="tech-badge highlight">Google Gemini API</span>
-                    <span class="tech-badge">Model Context Protocol (MCP)</span>
-                    <span class="tech-badge">Multi-Agent Systems</span>
-                    <span class="tech-badge">Mattermost Bots</span>
-                    <span class="tech-badge">GitLab / Jira Automation</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Skills Matrix -->
-        <section id="skills">
-            <h2>Kỹ năng Chuyên môn & Năng lực Công nghệ</h2>
-
-            <div class="skills">
-                <div class="skill-category hover-lift">
-                    <h3>Kiến trúc & Hệ thống Doanh nghiệp</h3>
-                    <ul class="skill-list">
+                    <ul class="timeline-bullets">
                         <li>
-                            <span class="skill-name">Enterprise ERP & MES Architecture</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 96%; width: 96%;"></div></div>
+                            <strong>Nền tảng ERP Doanh nghiệp Cốt lõi (7,550+ commits):</strong> Thiết kế và mở rộng hệ thống ERP trung tâm (C# .NET, ASP.NET MVC, DevExtreme, Razor, SQL Server). Tối ưu hóa hàng nghìn Stored Procedure phức tạp, thiết kế liên kết phân tán (Linked Server) giữa các nhà máy, giảm hơn 40% thời gian xử lý các nghiệp vụ dữ liệu lớn.
                         </li>
                         <li>
-                            <span class="skill-name">Microservices & API Gateway Design</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 92%; width: 92%;"></div></div>
+                            <strong>Hệ thống Ứng dụng Thông minh AGP - ClickOnce (7,140+ commits):</strong> Kiến trúc trưởng hệ thống ứng dụng Desktop thông minh phục vụ các chuyền may và bộ phận kỹ thuật. Xây dựng pipeline tự động nâng phiên bản ClickOnce và phát hành CI/CD không gián đoạn (Zero Downtime).
                         </li>
                         <li>
-                            <span class="skill-name">Multi-Agent AI & MCP Orchestration</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 94%; width: 94%;"></div></div>
+                            <strong>Thuật toán Điều độ Chuyền may Tự động PPS (AutoSewingPlan):</strong> Nghiên cứu và sáng chế thuật toán tối ưu hóa tự động sắp xếp layout chuyền may theo thời gian thực; cân bằng đa biến số giữa tiến độ nguyên phụ liệu, năng lực chuyền và đối soát tiến độ đơn hàng.
                         </li>
                         <li>
-                            <span class="skill-name">ClickOnce Smart Client Deployment</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 95%; width: 95%;"></div></div>
+                            <strong>Hệ sinh thái Industrial Mobile Backend (ITS.WebService - 2,790+ commits):</strong> Kiến trúc hệ thống API Gateway và Microservices kết nối các ứng dụng di động công nghiệp (App QC, ITSmart, SMM, Barcode Scanner), phục vụ đồng thời hàng nghìn request thời gian thực từ thiết bị cầm tay.
                         </li>
                         <li>
-                            <span class="skill-name">High-Concurrency & Distributed Architecture</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 90%; width: 90%;"></div></div>
+                            <strong>Hệ thống IoT &amp; Quản trị Kho Vải Thông minh:</strong> Thiết kế giải pháp kiểm soát an toàn dò kim gãy (RFID Zebra SDK, Impinj Speedway Connect), quản lý định vị cuộn vải thông minh theo thời gian thực và tự động hóa in tem mã vạch công nghiệp ZPL.
                         </li>
                     </ul>
+
+                    <div class="pill-group">
+                        <span class="pill pill-gold">Enterprise Architecture</span>
+                        <span class="pill">C# .NET</span>
+                        <span class="pill">ASP.NET MVC</span>
+                        <span class="pill">SQL Server Tuning</span>
+                        <span class="pill">ClickOnce</span>
+                        <span class="pill">Industrial RFID</span>
+                        <span class="pill">Microservices</span>
+                        <span class="pill">ZPL Engine</span>
+                    </div>
                 </div>
 
-                <div class="skill-category hover-lift">
-                    <h3>Backend & Ngôn ngữ Lập trình</h3>
-                    <ul class="skill-list">
+                <!-- Role 2 -->
+                <div class="timeline-entry">
+                    <div class="timeline-node"></div>
+                    <span class="timeline-period">2024 — Hiện tại • Open Source &amp; Enterprise AI</span>
+                    <h3 class="timeline-title">Chief AI Architect &amp; Founder</h3>
+                    <div class="timeline-org">DrakeAgent &amp; Phoenix Ecosystem</div>
+                    <p class="timeline-summary">
+                        Sáng lập và trực tiếp phát triển nền tảng tác tử thông minh (Multi-Agent System) thế hệ mới, tích hợp sâu vào quy trình DevOps và điều hành kỹ thuật thực tế cho doanh nghiệp.
+                    </p>
+
+                    <ul class="timeline-bullets">
                         <li>
+                            <strong>Triết lý Kiến trúc Zero-Specialized-Case:</strong> Thiết kế engine AI tổng quát, loại bỏ hoàn toàn việc viết code chắp vá cho từng ca đơn lẻ, giúp hệ thống mở rộng linh hoạt mà không phát sinh technical debt.
+                        </li>
+                        <li>
+                            <strong>Giao thức Model Context Protocol (MCP):</strong> Xây dựng cụm MCP Servers tùy biến kết nối trực tiếp với GitLab API, Jira Issue Tracking, Mattermost Bot, SQLite và Workstation Sandbox execution.
+                        </li>
+                        <li>
+                            <strong>Pipeline Tự động hóa Kỹ thuật Cao cấp:</strong> Triển khai tự động hóa phân tích task kỹ thuật, review Merge Request, đối soát và cảnh báo xung đột Release Script SQL, tự động kiểm tra key đa ngôn ngữ và tạo subtask kiểm thử.
+                        </li>
+                    </ul>
+
+                    <div class="pill-group">
+                        <span class="pill pill-gold">Multi-Agent Systems</span>
+                        <span class="pill">Next.js 15</span>
+                        <span class="pill">TypeScript</span>
+                        <span class="pill">Google Gemini API</span>
+                        <span class="pill">Model Context Protocol</span>
+                        <span class="pill">DevOps Automation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Matrix Section -->
+        <section class="section" id="skills">
+            <div class="section-header">
+                <h2 class="section-title">Ma trận Năng lực &amp; Chuyên môn Kỹ thuật</h2>
+                <span class="section-subtitle">Technical Mastery</span>
+            </div>
+
+            <div class="skills-matrix">
+                <!-- Domain 1 -->
+                <div class="matrix-card">
+                    <h3 class="matrix-card-title">
+                        <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        <span>Kiến trúc &amp; Hệ thống Doanh nghiệp</span>
+                    </h3>
+                    
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">Enterprise ERP &amp; MES Architecture</span>
+                            <span class="skill-score">96%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 96%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">ClickOnce Smart Client Architecture</span>
+                            <span class="skill-score">95%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">Microservices &amp; API Gateway Design</span>
+                            <span class="skill-score">92%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">High-Concurrency Distributed Systems</span>
+                            <span class="skill-score">90%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+                    </div>
+                </div>
+
+                <!-- Domain 2 -->
+                <div class="matrix-card">
+                    <h3 class="matrix-card-title">
+                        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        <span>Backend &amp; Lập trình Nền tảng</span>
+                    </h3>
+                    
+                    <div class="skill-row">
+                        <div class="skill-meta">
                             <span class="skill-name">C# / .NET (Core, ASP.NET MVC, Web API)</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 96%; width: 96%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">TypeScript / Node.js (Next.js 15, Express)</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 92%; width: 92%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">SQL (T-SQL, Stored Procedures, Linked Servers)</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 95%; width: 95%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">Python (Automation, Scripting, AI Tooling)</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 86%; width: 86%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">RESTful APIs & WebSockets / SignalR</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 92%; width: 92%;"></div></div>
-                        </li>
-                    </ul>
+                            <span class="skill-score">96%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 96%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">SQL (T-SQL, Stored Procs, Triggers)</span>
+                            <span class="skill-score">95%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">TypeScript / Node.js (Next.js 15)</span>
+                            <span class="skill-score">92%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">Python (Tooling, Automation, Scripting)</span>
+                            <span class="skill-score">86%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 86%;"></div></div>
+                    </div>
                 </div>
 
-                <div class="skill-category hover-lift">
-                    <h3>Cơ sở Dữ liệu & Tối ưu Hiệu năng</h3>
-                    <ul class="skill-list">
-                        <li>
-                            <span class="skill-name">Microsoft SQL Server Performance Tuning</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 95%; width: 95%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">Execution Plan Analysis & Index Optimization</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 94%; width: 94%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">Distributed Transactions & Data Integrity</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 92%; width: 92%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">SQLite & Local Cache Management</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 90%; width: 90%;"></div></div>
-                        </li>
-                    </ul>
+                <!-- Domain 3 -->
+                <div class="matrix-card">
+                    <h3 class="matrix-card-title">
+                        <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                        <span>Cơ sở Dữ liệu &amp; Hiệu năng Tải</span>
+                    </h3>
+                    
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">SQL Server Query &amp; Index Optimization</span>
+                            <span class="skill-score">95%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">Execution Plan Analysis &amp; Profiling</span>
+                            <span class="skill-score">94%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 94%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">Linked Server &amp; Cross-DB Transactions</span>
+                            <span class="skill-score">92%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">SQLite &amp; In-Memory Caching Strategy</span>
+                            <span class="skill-score">90%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+                    </div>
                 </div>
 
-                <div class="skill-category hover-lift">
-                    <h3>AI Agents & Tự động hóa Quy trình</h3>
-                    <ul class="skill-list">
-                        <li>
-                            <span class="skill-name">Google Gemini & Claude APIs (Function Calling)</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 95%; width: 95%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">Model Context Protocol (MCP Server/Client)</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 96%; width: 96%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">CI/CD & DevOps (GitLab API, Jira, Mattermost)</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 94%; width: 94%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">RPA, n8n & Automated Code Review Pipelines</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 90%; width: 90%;"></div></div>
-                        </li>
-                    </ul>
+                <!-- Domain 4 -->
+                <div class="matrix-card">
+                    <h3 class="matrix-card-title">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                        <span>AI Multi-Agent &amp; Tự động hóa</span>
+                    </h3>
+                    
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">Model Context Protocol (MCP Ecosystem)</span>
+                            <span class="skill-score">96%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 96%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">LLM Function Calling (Gemini / Claude)</span>
+                            <span class="skill-score">95%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">Automated CI/CD &amp; Code Review Pipelines</span>
+                            <span class="skill-score">94%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 94%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">DevOps ChatOps (GitLab, Jira, Mattermost)</span>
+                            <span class="skill-score">92%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+                    </div>
                 </div>
 
-                <div class="skill-category hover-lift">
-                    <h3>IoT Công nghiệp & Phần cứng</h3>
-                    <ul class="skill-list">
-                        <li>
-                            <span class="skill-name">Zebra RFID SDK & Handheld Scanners</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 93%; width: 93%;"></div></div>
-                        </li>
-                        <li>
+                <!-- Domain 5 -->
+                <div class="matrix-card">
+                    <h3 class="matrix-card-title">
+                        <svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+                        <span>IoT Công nghiệp &amp; Tích hợp Phần cứng</span>
+                    </h3>
+                    
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">Zebra RFID SDK &amp; Industrial Handhelds</span>
+                            <span class="skill-score">93%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 93%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">ZPL (Zebra Programming Language) Engine</span>
+                            <span class="skill-score">92%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
                             <span class="skill-name">Impinj Speedway Connect IoT Gateway</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 90%; width: 90%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">ZPL (Zebra Programming Language) Barcode</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 92%; width: 92%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">Android / WinCE Industrial Mobile Integration</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 88%; width: 88%;"></div></div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category hover-lift">
-                    <h3>Frontend & UI Engineering</h3>
-                    <ul class="skill-list">
-                        <li>
-                            <span class="skill-name">Next.js 15 / React.js / Modern TypeScript</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 90%; width: 90%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">DevExtreme UI Library & Razor View (.cshtml)</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 95%; width: 95%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">Responsive Design, CSS3 Animations, Themes</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 92%; width: 92%;"></div></div>
-                        </li>
-                        <li>
-                            <span class="skill-name">Production Dashboard & Real-Time Monitoring</span>
-                            <div class="skill-bar"><div class="skill-level" style="--percent: 92%; width: 92%;"></div></div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Engineering Principles -->
-        <section class="hover-lift">
-            <h2>Triết lý Kỹ thuật & Nguyên tắc Kiến trúc</h2>
-            <div class="principles-grid">
-                <div class="principle-card">
-                    <div class="principle-title">1. Zero-Specialized-Case Architecture</div>
-                    <div class="principle-desc">
-                        Tuyệt đối không chắp vá logic cho từng case đơn lẻ. Mọi thành phần đều được thiết kế tổng quát, rõ ràng và mở rộng linh hoạt theo chuẩn hệ thống.
+                            <span class="skill-score">90%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">Industrial Android &amp; WinCE Terminal Apps</span>
+                            <span class="skill-score">88%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
                     </div>
                 </div>
-                <div class="principle-card">
-                    <div class="principle-title">2. Data Integrity & Reliability First</div>
-                    <div class="principle-desc">
-                        Dữ liệu là huyết mạch của doanh nghiệp. Tối ưu hóa truy vấn chuyên sâu, giao dịch ACID nghiêm ngặt, kiểm soát an toàn kết nối và chống nghẽn DB.
+
+                <!-- Domain 6 -->
+                <div class="matrix-card">
+                    <h3 class="matrix-card-title">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                        <span>Giao diện &amp; Trải nghiệm Người dùng</span>
+                    </h3>
+                    
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">DevExtreme Enterprise UI &amp; Razor View</span>
+                            <span class="skill-score">95%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
                     </div>
-                </div>
-                <div class="principle-card">
-                    <div class="principle-title">3. Action-First & Extreme Automation</div>
-                    <div class="principle-desc">
-                        Tự động hóa triệt để các quy trình lặp lại bằng mã nguồn và AI Agent thông minh. Làm việc chuẩn xác, hành động dứt khoát và liên tục tối ưu hóa.
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">Next.js 15 / React.js / Responsive Design</span>
+                            <span class="skill-score">90%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">Real-Time Factory Floor Dashboards</span>
+                            <span class="skill-score">92%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-meta">
+                            <span class="skill-name">Multi-Language &amp; Internationalization (i18n)</span>
+                            <span class="skill-score">94%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill" style="width: 94%;"></div></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Education & Credentials -->
-        <section class="hover-lift">
-            <h2>Học vấn & Đào tạo Chuyên môn</h2>
-            <div class="timeline-item hover-lift" style="margin-bottom: 0;">
-                <h3>Cử nhân / Kỹ sư Công nghệ Thông tin</h3>
-                <p class="company">Trường Đại học Thủ Dầu Một (TDMU) • Viện Công nghệ số</p>
-                <p class="date">Niên khóa 2018 - 2022</p>
-                <p>Chuyên ngành Kỹ thuật Phần mềm & Hệ thống Thông tin. Nghiên cứu sâu về cấu trúc dữ liệu giải thuật, kiến trúc phân tán, lập trình mạng và quản trị cơ sở dữ liệu nâng cao.</p>
+        <!-- Engineering Principles Section -->
+        <section class="section" id="principles">
+            <div class="section-header">
+                <h2 class="section-title">Triết lý Kỹ thuật &amp; Nguyên tắc Kiến trúc</h2>
+                <span class="section-subtitle">Core Philosophy</span>
+            </div>
+
+            <div class="principles-row">
+                <div class="principle-box">
+                    <div class="principle-num">Principle 01</div>
+                    <h3 class="principle-name">Zero-Specialized-Case Architecture</h3>
+                    <p class="principle-text">
+                        Tuyệt đối không chắp vá logic cho từng case đơn lẻ. Mọi dịch vụ, công cụ và bảng biểu đều được chuẩn hóa tổng quát theo nguyên mẫu kiến trúc bền vững, giúp hệ thống mở rộng quy mô mà không sụp đổ.
+                    </p>
+                </div>
+                <div class="principle-box">
+                    <div class="principle-num">Principle 02</div>
+                    <h3 class="principle-name">Data Integrity &amp; Distributed Consistency</h3>
+                    <p class="principle-text">
+                        Dữ liệu là huyết mạch của mọi tổ chức sản xuất. Đặt trọng tâm vào tối ưu hóa chi phí I/O cơ sở dữ liệu, an toàn giao dịch ACID, kiểm soát xung đột lock và liên kết phân tán ổn định cao.
+                    </p>
+                </div>
+                <div class="principle-box">
+                    <div class="principle-num">Principle 03</div>
+                    <h3 class="principle-name">Extreme Automation &amp; Action-First</h3>
+                    <p class="principle-text">
+                        Tự động hóa triệt để những quy trình lặp lại bằng code và AI tác tử. Giải quyết vấn đề tận gốc rễ kỹ thuật, hành động dứt khoát và liên tục đo lường hiệu năng bằng số liệu thực tế.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>© 2026 <strong>Võ Thanh Bình (Drake)</strong> • Lead Software Architect</p>
-            <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 5px;">Designed with precision, industrial stability & Next-Gen AI capabilities.</p>
+        <!-- Education & Formal Background Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Học vấn &amp; Nền tảng Đào tạo</h2>
+                <span class="section-subtitle">Education &amp; Credentials</span>
+            </div>
+
+            <div class="timeline" style="padding-left: 20px;">
+                <div class="timeline-entry">
+                    <div class="timeline-node"></div>
+                    <span class="timeline-period">Niên khóa 2018 — 2022 • Hệ Chính Quy</span>
+                    <h3 class="timeline-title">Cử nhân / Kỹ sư Công nghệ Thông tin</h3>
+                    <div class="timeline-org">Trường Đại học Thủ Dầu Một (TDMU) • Viện Công nghệ số</div>
+                    <p class="timeline-summary">
+                        Chuyên ngành Kỹ thuật Phần mềm &amp; Hệ thống Thông tin. Nghiên cứu sâu về cấu trúc dữ liệu giải thuật, kiến trúc hệ điều hành, phân tán dữ liệu và bảo mật hệ thống.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Executive Footer -->
+        <footer class="executive-footer">
+            <p class="footer-stamp">© 2026 <strong>VÕ THANH BÌNH (DRAKE)</strong> • LEAD SOFTWARE ARCHITECT</p>
+            <p class="footer-sub">Built with Precision • Enterprise Industrial Stability • Next-Gen AI Multi-Agent Powered</p>
         </footer>
     </div>
 
-    <!-- Scripts -->
+    <!-- Theme Toggle & Modular Content Script -->
     <script>
-        // Floating Particle Background Generator
-        function createParticles() {
-            const container = document.getElementById('particles');
-            if (!container) return;
-            const colors = ['#3498db', '#2ecc71', '#9b59b6', '#38bdf8', '#10b981'];
-            const particleCount = 28;
-            
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                const size = Math.random() * 8 + 4;
-                particle.style.width = size + 'px';
-                particle.style.height = size + 'px';
-                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
-                particle.style.left = Math.random() * 100 + 'vw';
-                particle.style.top = Math.random() * 100 + 'vh';
-                particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
-                particle.style.animationDelay = (Math.random() * 8) + 's';
-                particle.style.opacity = Math.random() * 0.35 + 0.15;
-                container.appendChild(particle);
-            }
-        }
-        createParticles();
+        // Theme Switcher (Executive Dark & Light)
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const htmlElement = document.documentElement;
 
-        // Optional Dynamic Content Fetcher (Works smoothly on HTTP/HTTPS while preserving fallback content)
-        async function loadContentSafe(id, file) {
+        // Load saved theme or default to dark
+        const savedTheme = localStorage.getItem('drake_theme') || 'dark';
+        htmlElement.setAttribute('data-theme', savedTheme);
+        themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = htmlElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                htmlElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('drake_theme', newTheme);
+                themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+            });
+        }
+
+        // Modular content loader for HTTP/HTTPS environments
+        async function loadModularContent(id, file) {
             try {
                 if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
                     const response = await fetch(file);
                     if (response.ok) {
                         const content = await response.text();
-                        const target = document.getElementById(id);
-                        if (target && content.trim().length > 0) {
-                            target.innerHTML = content;
+                        const el = document.getElementById(id);
+                        if (el && content.trim().length > 0) {
+                            el.innerHTML = content;
                         }
                     }
                 }
             } catch (err) {
-                // Silently fallback to embedded HTML content
+                // Graceful fallback to pre-rendered HTML
             }
         }
 
-        // Trigger safe loader for modular maintenance
-        loadContentSafe('personal-info', 'personal-info.html');
-        loadContentSafe('experience', 'experience.html');
-        loadContentSafe('skills', 'skills.html');
+        // Optional modular sync
+        loadModularContent('personal-info', 'personal-info.html');
     </script>
 </body>
 </html>
