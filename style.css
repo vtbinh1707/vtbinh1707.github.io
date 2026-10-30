@@ -216,6 +216,37 @@ body::before {
     }
 }
 
+/* Executive Scroll Progress Line (The Boat / Awwwards inspiration) */
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: var(--gold-gradient);
+    z-index: 9999;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+    pointer-events: none;
+    transition: width 0.06s ease-out;
+}
+
+/* Interactive Neural Quantum Architectural Canvas (Kioken / Sci-Fi inspiration) */
+#matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.65;
+    transition: opacity 0.5s ease;
+}
+
+[data-theme="light"] #matrixCanvas {
+    opacity: 0.42;
+}
+
 /* Main Container */
 .container {
     max-width: 1060px;
@@ -265,6 +296,72 @@ body::before {
     font-weight: 800;
     font-size: 0.85rem;
     box-shadow: var(--shadow-gold);
+}
+
+/* Executive Live Telemetry HUD (Kioken / Sci-Fi inspiration) */
+.telemetry-hud {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 14px;
+    background: var(--badge-bg);
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-full);
+    font-family: 'Space Grotesk', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    transition: var(--transition);
+    user-select: none;
+}
+
+.telemetry-hud:hover {
+    border-color: var(--gold-primary);
+    background: var(--bg-card-hover);
+}
+
+.telemetry-pulse {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: 11px;
+}
+
+.pulse-bar {
+    width: 2px;
+    height: 100%;
+    background: var(--gold-primary);
+    border-radius: 1px;
+    animation: eqPulse 1.2s ease-in-out infinite alternate;
+}
+
+.pulse-bar:nth-child(2) {
+    animation-delay: 0.35s;
+    height: 60%;
+    background: var(--steel-primary);
+}
+
+.pulse-bar:nth-child(3) {
+    animation-delay: 0.7s;
+    height: 80%;
+}
+
+@keyframes eqPulse {
+    0% { height: 25%; opacity: 0.4; }
+    100% { height: 100%; opacity: 1; }
+}
+
+.telemetry-label {
+    color: var(--gold-primary);
+    font-weight: 700;
+}
+
+.telemetry-text {
+    color: var(--text-secondary);
+    font-weight: 600;
+    min-width: 175px;
+    display: inline-block;
+    transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .nav-links {
@@ -641,6 +738,75 @@ body::before {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-muted);
+}
+
+/* Dynamic Spotlight Hover & Glowing Radial Sheen (Awwwards / Luxury inspiration) */
+.system-card,
+.ai-card,
+.matrix-card,
+.header-card,
+.stat-box,
+.principle-box {
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.system-card::after,
+.ai-card::after,
+.matrix-card::after,
+.header-card::after,
+.stat-box::after,
+.principle-box::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+        460px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+        rgba(212, 175, 55, 0.12),
+        transparent 70%
+    );
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+    z-index: 2;
+}
+
+[data-theme="light"] .system-card::after,
+[data-theme="light"] .ai-card::after,
+[data-theme="light"] .matrix-card::after,
+[data-theme="light"] .header-card::after,
+[data-theme="light"] .stat-box::after,
+[data-theme="light"] .principle-box::after {
+    background: radial-gradient(
+        460px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+        rgba(180, 140, 54, 0.1),
+        transparent 70%
+    );
+}
+
+.system-card:hover::after,
+.ai-card:hover::after,
+.matrix-card:hover::after,
+.header-card:hover::after,
+.stat-box:hover::after,
+.principle-box:hover::after {
+    opacity: 1;
+}
+
+/* Kinetic Scroll Reveal Animation (Polo Club & The Boat inspiration) */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Architectural Systems Grid */
@@ -1155,7 +1321,10 @@ body::before {
     .top-nav,
     .theme-toggle-btn,
     .cta-group,
-    .avatar-border {
+    .avatar-border,
+    .scroll-progress-bar,
+    #matrixCanvas,
+    .telemetry-hud {
         display: none !important;
     }
 
@@ -1218,6 +1387,12 @@ body::before {
 }
 
 /* Responsive Breakpoints */
+@media (max-width: 960px) {
+    .telemetry-hud {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 20px 16px 60px;

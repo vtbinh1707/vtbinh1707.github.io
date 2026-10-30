@@ -36,6 +36,12 @@
 </head>
 <body>
 
+    <!-- Ambient Scroll Progress Bar (The Boat / Awwwards inspiration) -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <!-- Interactive Neural Quantum Architectural Canvas (Kioken / Sci-Fi inspiration) -->
+    <canvas id="matrixCanvas"></canvas>
+
     <div class="container">
         <!-- Top Navigation Bar -->
         <nav class="top-nav">
@@ -43,6 +49,17 @@
                 <span class="monogram-badge">VB</span>
                 <span>VÕ THANH BÌNH</span>
             </a>
+
+            <!-- Executive Live Telemetry HUD -->
+            <div class="telemetry-hud" id="telemetryHud" title="Hệ thống Vận hành &amp; Giám sát Trực tuyến">
+                <div class="telemetry-pulse">
+                    <span class="pulse-bar"></span>
+                    <span class="pulse-bar"></span>
+                    <span class="pulse-bar"></span>
+                </div>
+                <span class="telemetry-label">TELEMETRY:</span>
+                <span class="telemetry-text" id="telemetryTicker">ERP • MES • 99.99% UPTIME</span>
+            </div>
 
             <ul class="nav-links">
                 <li><a href="#overview">Tổng quan</a></li>
@@ -65,7 +82,7 @@
         </nav>
 
         <!-- Executive Header Profile Card -->
-        <header class="header-card" id="overview">
+        <header class="header-card reveal-on-scroll" id="overview">
             <div id="personal-info" class="header-flex">
                 <div class="header-main">
                     <div class="status-pill">
@@ -120,7 +137,7 @@
         </header>
 
         <!-- Executive Impact Stats Ribbon -->
-        <div class="stats-ribbon">
+        <div class="stats-ribbon reveal-on-scroll">
             <div class="stat-box">
                 <div class="stat-figure">30,000+</div>
                 <div class="stat-title">Enterprise Commits</div>
@@ -144,7 +161,7 @@
         </div>
 
         <!-- Executive Summary Section -->
-        <section class="section">
+        <section class="section reveal-on-scroll">
             <div class="section-header">
                 <h2 class="section-title">Tuyên ngôn &amp; Tầm nhìn Kiến trúc</h2>
                 <span class="section-subtitle">Executive Statement</span>
@@ -158,7 +175,7 @@
         </section>
 
         <!-- Flagship Systems & Key Architecture Showcase -->
-        <section class="section" id="systems">
+        <section class="section reveal-on-scroll" id="systems">
             <div class="section-header">
                 <h2 class="section-title">Hệ thống Trọng yếu &amp; Dự án Tiêu biểu</h2>
                 <span class="section-subtitle">Flagship Architecture</span>
@@ -313,7 +330,7 @@
         </section>
 
         <!-- Practical AI Engineering & Autonomous Workflows Section -->
-        <section class="section" id="ai-workflows">
+        <section class="section reveal-on-scroll" id="ai-workflows">
             <div class="section-header">
                 <h2 class="section-title">Ứng Dụng AI Thực Chiến Vào Quy Trình Kỹ Thuật</h2>
                 <span class="section-subtitle">AI-Driven Engineering</span>
@@ -467,7 +484,7 @@
         </section>
 
         <!-- Professional Experience Section -->
-        <section class="section" id="experience">
+        <section class="section reveal-on-scroll" id="experience">
             <div class="section-header">
                 <h2 class="section-title">Kinh nghiệm Lãnh đạo &amp; Thực chiến</h2>
                 <span class="section-subtitle">Career Milestones</span>
@@ -549,7 +566,7 @@
         </section>
 
         <!-- Technical Skills Matrix Section -->
-        <section class="section" id="skills">
+        <section class="section reveal-on-scroll" id="skills">
             <div class="section-header">
                 <h2 class="section-title">Ma trận Năng lực &amp; Chuyên môn Kỹ thuật</h2>
                 <span class="section-subtitle">Technical Mastery</span>
@@ -781,7 +798,7 @@
         </section>
 
         <!-- Engineering Principles Section -->
-        <section class="section" id="principles">
+        <section class="section reveal-on-scroll" id="principles">
             <div class="section-header">
                 <h2 class="section-title">Triết lý Kỹ thuật &amp; Nguyên tắc Kiến trúc</h2>
                 <span class="section-subtitle">Core Philosophy</span>
@@ -813,7 +830,7 @@
         </section>
 
         <!-- Education & Formal Background Section -->
-        <section class="section">
+        <section class="section reveal-on-scroll">
             <div class="section-header">
                 <h2 class="section-title">Học vấn &amp; Nền tảng Đào tạo</h2>
                 <span class="section-subtitle">Education &amp; Credentials</span>
@@ -921,6 +938,233 @@
 
         // Optional modular sync
         loadModularContent('personal-info', 'personal-info.html');
+
+        // ==========================================================================
+        // EXCLUSIVE ARCHITECTURAL EFFECTS SUITE (Awwwards / Kioken / Polo Club Inspired)
+        // ==========================================================================
+
+        // 1. AMBIENT SCROLL PROGRESS BAR (The Boat & Awwwards inspiration)
+        const scrollBar = document.getElementById('scrollProgressBar');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            if (scrollHeight > 0 && scrollBar) {
+                const progress = (scrollTop / scrollHeight) * 100;
+                scrollBar.style.width = `${progress}%`;
+            }
+        }, { passive: true });
+
+        // 2. LIVE ARCHITECT TELEMETRY HUD TICKER (Kioken & Sci-Fi inspiration)
+        const telemetryTicker = document.getElementById('telemetryTicker');
+        const telemetryMessages = [
+            "CORE ERP • 7,550+ COMMITS",
+            "ARCHITECTURE • ZERO-SPECIALIZED-CASE",
+            "AI MULTI-AGENT • MCP INTEGRATED",
+            "AGP DESKTOP • CLICKONCE ZERO-DOWNTIME",
+            "PPS ENGINE • REAL-TIME SEWING PLAN",
+            "INDUSTRIAL IOT • ZEBRA RFID CERTIFIED",
+            "PRODUCTION STATUS • 99.99% STABLE",
+            "CODE AUDIT • 100% TRANSACTION SAFETY"
+        ];
+        let telemetryIndex = 0;
+        if (telemetryTicker) {
+            setInterval(() => {
+                telemetryIndex = (telemetryIndex + 1) % telemetryMessages.length;
+                telemetryTicker.style.opacity = '0';
+                telemetryTicker.style.transform = 'translateY(-4px)';
+                setTimeout(() => {
+                    telemetryTicker.textContent = telemetryMessages[telemetryIndex];
+                    telemetryTicker.style.opacity = '1';
+                    telemetryTicker.style.transform = 'translateY(0)';
+                }, 220);
+            }, 3600);
+        }
+
+        // 3. KINETIC SCROLL REVEAL (Polo Club & Luxury Staggered Reveal)
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+        } else {
+            revealElements.forEach(el => el.classList.add('is-revealed'));
+        }
+
+        // 4. DYNAMIC SPOTLIGHT & 3D PERSPECTIVE TILT (Awwwards & Bruno Simon inspiration)
+        const interactiveCards = document.querySelectorAll('.header-card, .system-card, .ai-card, .matrix-card, .stat-box, .principle-box');
+        interactiveCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+
+                // Subtle 3D perspective tilt (desktop only)
+                if (window.innerWidth > 992) {
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = ((y - centerY) / centerY) * -3;
+                    const rotateY = ((x - centerX) / centerX) * 3;
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px)`;
+                }
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+
+        // 5. MAGNETIC BUTTONS (Polo Club Luxury Micro-interaction)
+        const magneticBtns = document.querySelectorAll('.btn-primary, .brand-monogram');
+        if (window.innerWidth > 992) {
+            magneticBtns.forEach(btn => {
+                btn.addEventListener('mousemove', (e) => {
+                    const rect = btn.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    btn.style.transform = `translate(${x * 0.18}px, ${y * 0.18}px)`;
+                });
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = '';
+                });
+            });
+        }
+
+        // 6. INTERACTIVE NEURAL QUANTUM ARCHITECTURAL CANVAS (Kioken / Sci-Fi inspiration)
+        (function() {
+            const canvas = document.getElementById('matrixCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            if (!ctx) return;
+
+            let width = (canvas.width = window.innerWidth);
+            let height = (canvas.height = window.innerHeight);
+
+            // Responsive particle count (lighter on mobile)
+            const particleCount = window.innerWidth < 768 ? 22 : 46;
+            const connectionDistance = 110;
+            const mouseDistance = 140;
+            let mouse = { x: -9999, y: -9999 };
+
+            window.addEventListener('mousemove', (e) => {
+                mouse.x = e.clientX;
+                mouse.y = e.clientY;
+            }, { passive: true });
+
+            window.addEventListener('mouseleave', () => {
+                mouse.x = -9999;
+                mouse.y = -9999;
+            });
+
+            window.addEventListener('resize', () => {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            }, { passive: true });
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    this.vx = (Math.random() - 0.5) * 0.45;
+                    this.vy = (Math.random() - 0.5) * 0.45;
+                    this.radius = Math.random() * 1.5 + 0.8;
+                }
+
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+
+                    if (this.x < 0) this.x = width;
+                    else if (this.x > width) this.x = 0;
+                    if (this.y < 0) this.y = height;
+                    else if (this.y > height) this.y = 0;
+
+                    // Mouse proximity interaction
+                    const dx = mouse.x - this.x;
+                    const dy = mouse.y - this.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < mouseDistance) {
+                        const force = (mouseDistance - dist) / mouseDistance;
+                        this.x -= (dx / dist) * force * 0.8;
+                        this.y -= (dy / dist) * force * 0.8;
+                    }
+                }
+
+                draw(theme) {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = theme === 'dark' 
+                        ? 'rgba(212, 175, 55, 0.45)' 
+                        : 'rgba(180, 140, 54, 0.35)';
+                    ctx.fill();
+                }
+            }
+
+            const particles = Array.from({ length: particleCount }, () => new Particle());
+
+            let animFrameId = null;
+            function render() {
+                if (document.hidden) {
+                    animFrameId = requestAnimationFrame(render);
+                    return;
+                }
+
+                ctx.clearRect(0, 0, width, height);
+                const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+
+                // Particle inter-connections
+                for (let i = 0; i < particles.length; i++) {
+                    particles[i].update();
+                    particles[i].draw(currentTheme);
+
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+
+                        if (dist < connectionDistance) {
+                            const alpha = (1 - dist / connectionDistance) * (currentTheme === 'dark' ? 0.16 : 0.1);
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = currentTheme === 'dark'
+                                ? `rgba(212, 175, 55, ${alpha})`
+                                : `rgba(180, 140, 54, ${alpha})`;
+                            ctx.lineWidth = 0.8;
+                            ctx.stroke();
+                        }
+                    }
+
+                    // Dynamic line to cursor
+                    const mdx = particles[i].x - mouse.x;
+                    const mdy = particles[i].y - mouse.y;
+                    const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
+                    if (mdist < mouseDistance) {
+                        const mAlpha = (1 - mdist / mouseDistance) * (currentTheme === 'dark' ? 0.35 : 0.22);
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(mouse.x, mouse.y);
+                        ctx.strokeStyle = currentTheme === 'dark'
+                            ? `rgba(56, 189, 248, ${mAlpha})`
+                            : `rgba(2, 132, 199, ${mAlpha})`;
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                    }
+                }
+
+                animFrameId = requestAnimationFrame(render);
+            }
+
+            render();
+        })();
     </script>
 </body>
 </html>
