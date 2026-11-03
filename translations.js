@@ -1,15 +1,13 @@
 /**
  * BILINGUAL TRANSLATION DICTIONARY (VIETNAMESE & ENGLISH)
- * Vo Thanh Binh (Drake) — Lead Software Architect Portfolio
- * 100% Real-World Engineering Facts from Enterprise & AI Operations
+ * Vo Thanh Binh (Drake) — Lead Software Architect Infographic Portfolio
  */
 
 const translations = {
     vi: {
-        // Navigation & Top Bar
         brand_name: "VÕ THANH BÌNH",
         brand_role: "LEAD ARCHITECT",
-        btn_pdf: "In / Tải PDF (A4)",
+        btn_pdf: "In / PDF",
         tagline: "Lead Software Architect • Enterprise ERP & AI Multi-Agent",
         role_title: "Lead Software Architect | Chief Solutions & AI Systems Engineer",
         header_bio: "Kiến trúc sư giải pháp phần mềm cấp cao với hơn 4 năm kinh nghiệm thiết kế, vận hành hệ thống ERP sản xuất may mặc quy mô lớn (FEAVN • Far Eastern Group) và nền tảng AI Multi-Agent. Vận hành với triết lý kiến trúc <em>\"Zero-Specialized-Case\"</em> — chuẩn hóa, ổn định bền bỉ và tối ưu hóa hiệu năng thực tế.",
@@ -17,28 +15,31 @@ const translations = {
         company: "Far Eastern Apparel Vietnam (FEAVN)",
         btn_github: "GitHub Profile",
         btn_contact: "Liên hệ Trực tiếp",
-        status_available: "SẴN SÀNG TRIỂN KHAI • 4+ NĂM LEAD ARCHITECT",
+        status_available: "PRODUCTION ACTIVE • 4+ NĂM LEAD ARCHITECT",
+        doctrine_badge: "TRIẾT LÝ: ZERO-SPECIALIZED-CASE",
+        heatmap_title: "MẬT ĐỘ COMMIT THỰC CHIẾN (52 TUẦN)",
 
-        // Quick Navigation Pills
+        // Dock Navigation
         nav_metrics: "Chỉ Số",
-        nav_ecosystem: "Sơ Đồ Kiến Trúc",
-        nav_sdlc: "AI Pipeline",
+        nav_ecosystem: "Topology",
+        nav_sdlc: "AI & MCP",
         nav_systems: "Hệ Thống",
-        nav_skills: "Kỹ Năng",
-        nav_experience: "Kinh Nghiệm",
+        nav_skills: "Radar Kỹ Năng",
+        nav_experience: "Sự Nghiệp",
 
         // Live Telemetry HUD
-        hud_label: "GIÁM SÁT TRỰC TUYẾN:",
+        hud_label: "TELEMETRY:",
         hud_t1: "FEA ERP • MES • 99.99% UPTIME",
-        hud_t2: "LIVE DB: 10.17.215.22 • LINKED SERVER HOẠT ĐỘNG",
+        hud_t2: "LIVE DB: 10.17.215.22 • LINKED SERVER ACTIVE",
         hud_t3: "AGP CLICKONCE • 500+ MÁY TRẠM • 0 DOWNTIME",
-        hud_t4: "AI MULTI-AGENT HUB • MCP CHUẨN HÓA • FUNCTION CALLING",
+        hud_t4: "AI MULTI-AGENT HUB • MCP READY • FUNCTION CALLING",
         hud_t5: "RFID SCANNER ENGINE • ĐỘ TRỄ < 80ms",
         hud_t6: "KIẾN TRÚC: ZERO-SPECIALIZED-CASE",
 
-        // Impact Stats Ribbon
-        metrics_heading: "Chỉ Số Đột Phá & Dữ Liệu Vận Hành Thực Tế",
-        metrics_sub: "Dữ liệu đo lường trực tiếp từ môi trường sản xuất công nghiệp quốc tế và hệ thống AI tự hành",
+        // Impact Stats
+        metrics_tag: "01 // DỮ LIỆU ĐO LƯỜNG SẢN XUẤT",
+        metrics_heading: "Infographic Chỉ Số Đột Phá & Hiệu Năng Thực Chiến",
+        metrics_sub: "Trích xuất trực tiếp từ hệ thống sản xuất công nghiệp quốc tế và mạng lưới tác tử AI tự hành",
         stat_commits_num: "30,000+",
         stat_commits_label: "Enterprise Commits",
         stat_commits_desc: "Mã nguồn sản xuất thực chiến đã đóng góp",
@@ -69,40 +70,53 @@ const translations = {
         stat_efficiency_desc: "Thuật toán PPS rút ngắn lập kế hoạch từ 2 ngày -> 15p",
         stat_efficiency_badge: "AutoSewingPlan",
 
+        // Dual Charts (Commit Breakdown & Performance Delta)
+        chart_commit_title: "Phân Bổ 30,000+ Commits Theo Hệ Thống",
+        chart_commit_sub: "Tỷ trọng đóng góp mã nguồn trên các nền tảng trọng yếu tại FEAVN",
+        chart_delta_title: "Biểu Đồ Tối Ưu Hóa Hiệu Năng (Before vs. After)",
+        chart_delta_sub: "Đo lường mức độ cải thiện tốc độ xử lý sau khi tái cấu trúc kiến trúc & áp dụng AI",
+        delta_1_name: "Điều độ chuyền may tự động (PPS AutoSewingPlan)",
+        delta_1_val: "2 Ngày → 15 Phút (-99%)",
+        delta_2_name: "Tốc độ kiểm kê kho vải thông minh (UHF RFID)",
+        delta_2_val: "+70% Tốc Độ",
+        delta_3_name: "Thời gian bóc tách BA & Review Code (DrakeAgent MCP)",
+        delta_3_val: "-65% Thời Gian",
+        delta_4_name: "Độ trễ truy vấn báo cáo phân tán (Linked Server Tuning)",
+        delta_4_val: "-40% Độ Trễ",
+
         // Summary
         summary_heading: "Tuyên Ngôn Kiến Trúc & Tư Duy Kỹ Thuật",
         summary_text: "Tôi theo đuổi nguyên tắc kiến trúc <strong>\"Zero-Specialized-Case\"</strong>: nói không với các bản vá chắp vá tình thế, luôn hướng đến thiết kế tổng quát, module hóa tối đa và chuẩn hóa cấu trúc dữ liệu để hệ thống vận hành bền vững không phát sinh nợ kỹ thuật. Với hơn <strong>30,000+ lượt commit</strong> thực chiến trên các hệ thống sản xuất tại tập đoàn may mặc quốc tế, tôi khai phóng sức mạnh của <strong>AI Multi-Agent & giao thức MCP</strong> vào từng khâu kỹ thuật thực tế: từ bóc tách nghiệp vụ BA, kiểm duyệt an toàn release script SQL cho đến sinh kịch bản test tự động.",
 
         // Interactive Ecosystem Architecture Map
-        eco_heading: "Sơ Đồ Hệ Sinh Thái Kiến Trúc Toàn Diện",
-        eco_sub: "Mô hình mạng lưới liên kết giữa ERP Lõi, Cơ sở dữ liệu phân tán, Thiết bị IoT xưởng và AI Tác tử Hub",
+        eco_tag: "02 // BẢN ĐỒ KIẾN TRÚC & MÔ PHỎNG LUỒNG DỮ LIỆU",
+        eco_heading: "Sơ Đồ Hệ Sinh Thái Kiến Trúc Doanh Nghiệp Tương Tác",
+        eco_sub: "Bấm vào từng Node hoặc chạy mô phỏng Stress Test để quan sát luồng gói tin thời gian thực",
+        sim_btn_run: "⚡ Chạy Mô Phỏng Luồng Dữ Liệu Sản Xuất",
+        sim_status_ready: "TRẠNG THÁI: SẴN SÀNG MÔ PHỎNG",
         eco_node_erp: "FEA ERP CORE",
-        eco_node_erp_sub: "C# .NET • SQL Tuning",
+        eco_node_erp_sub: "C# .NET • SQL Tuning • 7,550+ Commits",
         eco_node_db: "LINKED SERVER DB",
-        eco_node_db_sub: "10.17.215.22 • ACID Locks",
+        eco_node_db_sub: "10.17.215.22 • ACID Locks • Cross-Plant",
         eco_node_agp: "AGP CLICKONCE",
-        eco_node_agp_sub: "500+ Workstations",
+        eco_node_agp_sub: "500+ Workstations • Zero Downtime",
         eco_node_pps: "PPS ALGO ENGINE",
-        eco_node_pps_sub: "AutoSewingPlan • 92% Line",
+        eco_node_pps_sub: "AutoSewingPlan • 92% Line Capacity",
         eco_node_mobile: "ITS.MOBILE & QC",
-        eco_node_mobile_sub: "Microservices • <80ms",
+        eco_node_mobile_sub: "Microservices • 500K+ Scans/Day",
         eco_node_rfid: "RFID & KHO VẢI",
-        eco_node_rfid_sub: "Zebra • Impinj Gateway",
+        eco_node_rfid_sub: "Zebra SDK • Impinj Speedway • ZPL",
         eco_node_ai: "DRAKE AGENT & MCP",
-        eco_node_ai_sub: "AI Multi-Agent Hub",
-        eco_hint: "✦ Bấm vào từng khối kiến trúc để soi chi tiết công nghệ & dữ liệu vận hành",
+        eco_node_ai_sub: "Autonomous Multi-Agent SDLC Hub",
 
         // AI Multi-Agent SDLC Pipeline Infographic
+        ai_tag: "03 // HỆ SINH THÁI AI MULTI-AGENT & LIVE MCP CONSOLE",
         ai_pipeline_heading: "Quy Trình AI Tác Tử Tự Động Hóa Thực Chiến (SDLC Pipeline)",
-        ai_pipeline_sub: "Các quy trình tác tử tự hành (Autonomous Multi-Agent) được vận hành hàng ngày qua giao thức Model Context Protocol (MCP), kết nối trực tiếp hạ tầng thực tế",
+        ai_pipeline_sub: "Tương tác với 4 giai đoạn SDLC tự hành hoặc bấm chạy thử lệnh MCP trực tiếp trên Terminal mô phỏng",
         step1_title: "1. Bóc Tách Nghiệp Vụ BA/SA",
-        step1_desc: "AI tự động phân tích và trích xuất 100% sơ đồ nghiệp vụ từ file Excel, Word, PPTX của BA/SA",
         step2_title: "2. Soi DB Sâu (analyze_task)",
-        step2_desc: "Đọc trực tiếp cấu trúc bảng, index & Stored Procedure trên DB thật 10.17.215.22 trước khi viết code",
-        step3_title: "3. Chốt Chặn An Toàn Code (check_code_change)",
-        step3_desc: "Bắt buộc bọc BEGIN TRAN/COMMIT, chặn Exception thô, kiểm tra idempotency và ép UTF-8 BOM",
-        step4_title: "4. Tự Sinh QA Subtask (create_test_task)",
-        step4_desc: "Tự sinh Jira Subtask với Test Matrix toàn diện, script test data, rollback an toàn và bắn ChatOps",
+        step3_title: "3. Chốt Chặn Code (check_code_change)",
+        step4_title: "4. Tự Sinh QA (create_test_task)",
 
         ai_c1_title: "Hạ Tầng Tác Tử & Custom MCP Servers",
         ai_c1_badge: "Custom MCP",
@@ -129,9 +143,10 @@ const translations = {
         ai_c4_b3: "<strong>Điều phối ChatOps:</strong> Chuyển task sang trạng thái In Review & gửi tin nhắn Mattermost đích danh",
 
         // Systems Showcase
+        sys_tag: "04 // HỆ THỐNG SẢN XUẤT TRỌNG YẾU",
         systems_heading: "Hệ Thống Trọng Yếu & Dự Án Thực Tế",
         systems_sub: "6 hệ thống cốt lõi thiết kế và triển khai quy mô lớn phục vụ chuỗi nhà xưởng may mặc quốc tế",
-        filter_all: "Tất Cả",
+        filter_all: "Tất Cả (6)",
         filter_erp: "ERP & Backend",
         filter_ai: "AI & Automation",
         filter_iot: "IoT & Mobile",
@@ -166,15 +181,19 @@ const translations = {
         sys6_desc: "Nền tảng tác tử thông minh tích hợp trực tiếp vào môi trường kỹ thuật qua giao thức Model Context Protocol (MCP). Tự động phân tích task, review Merge Request, đối soát release script SQL và điều phối pipeline.",
         sys6_impact: "<strong>Thực tế:</strong> Giảm 65% thời gian tra soát nghiệp vụ kỹ thuật và ngăn chặn 100% rủi ro xung đột script release trên Production.",
 
-        // Skills (Real Stack)
-        skills_heading: "Năng Lực Lõi & Vũ Khí Công Nghệ",
-        skills_sub: "Ma trận công nghệ được kiểm chứng qua hơn 30,000 commits thực tế trên hệ thống sản xuất",
+        // Skills & Radar
+        skills_tag: "05 // MA TRẬN NĂNG LỰC & BIỂU ĐỒ RADAR",
+        skills_heading: "Biểu Đồ Radar Kỹ Thuật & Vũ Khí Công Nghệ",
+        skills_sub: "Đánh giá đa chiều năng lực kiến trúc qua hơn 30,000 commits thực tế trên hệ thống sản xuất",
+        radar_card_title: "Radar Trọng Số Năng Lực Lõi",
+        radar_card_sub: "Rê chuột vào các cụm kỹ năng bên phải để xem biến thiên trọng số",
         skill_c1_title: "Kiến Trúc & Hệ Thống Doanh Nghiệp",
         skill_c2_title: "Backend & Tối Ưu Cơ Sở Dữ Liệu",
         skill_c3_title: "AI Multi-Agent & Tự Động Hóa Kỹ Thuật",
         skill_c4_title: "IoT Công Nghiệp & Giao Diện Doanh Nghiệp",
 
         // Experience Section
+        exp_tag: "06 // LỘ TRÌNH SỰ NGHIỆP & TRIẾT LÝ KỸ THUẬT",
         exp_heading: "Kinh Nghiệm Thực Chiến & Vị Trí Trọng Yếu",
         exp_sub: "Lộ trình dẫn dắt kiến trúc phần mềm và kỹ thuật sản xuất quy mô quốc tế",
         exp_r1_title: "Lead Software Architect & Tech Lead",
@@ -197,7 +216,7 @@ const translations = {
 
         // Education
         edu_heading: "Học Vấn & Bằng Cấp",
-        edu_degree: "Cử nhân / Kỹ sư Công nghệ Thông tin",
+        edu_degree: "Cử nhân / Kỹ sư Công nghệ Thông tin (Loại Giỏi)",
         edu_school: "Trường Đại học Thủ Dầu Một (TDMU) • Viện Công nghệ số",
         edu_period: "(2018 — 2022)",
         edu_desc: "Chuyên ngành Kỹ thuật Phần mềm & Hệ thống Thông tin. Tốt nghiệp loại Giỏi. Nghiên cứu sâu về Cấu trúc Dữ liệu & Giải thuật, Kiến trúc Hệ thống và Cơ sở Dữ liệu Phân tán.",
@@ -208,10 +227,9 @@ const translations = {
     },
 
     en: {
-        // Navigation & Top Bar
         brand_name: "VO THANH BINH",
         brand_role: "LEAD ARCHITECT",
-        btn_pdf: "Print / PDF (A4)",
+        btn_pdf: "Print / PDF",
         tagline: "Lead Software Architect • Enterprise ERP & AI Multi-Agent",
         role_title: "Lead Software Architect | Chief Solutions & AI Systems Engineer",
         header_bio: "Senior software solutions architect with over 4 years of proven experience designing and scaling large-scale manufacturing ERP systems (FEAVN • Far Eastern Group) and autonomous AI Multi-Agent platforms. Driven by the <em>\"Zero-Specialized-Case\"</em> doctrine — standardization, high availability, and real-world performance optimization.",
@@ -219,18 +237,20 @@ const translations = {
         company: "Far Eastern Apparel Vietnam (FEAVN)",
         btn_github: "GitHub Profile",
         btn_contact: "Contact Direct",
-        status_available: "AVAILABLE FOR PRODUCTION • 4+ YEARS LEAD ARCHITECT",
+        status_available: "PRODUCTION ACTIVE • 4+ YEARS LEAD ARCHITECT",
+        doctrine_badge: "DOCTRINE: ZERO-SPECIALIZED-CASE",
+        heatmap_title: "PRODUCTION COMMIT DENSITY (52 WEEKS)",
 
-        // Quick Navigation Pills
+        // Dock Navigation
         nav_metrics: "Metrics",
-        nav_ecosystem: "Architecture Map",
-        nav_sdlc: "AI Pipeline",
+        nav_ecosystem: "Topology",
+        nav_sdlc: "AI & MCP",
         nav_systems: "Systems",
-        nav_skills: "Skills",
-        nav_experience: "Experience",
+        nav_skills: "Skill Radar",
+        nav_experience: "Career",
 
         // Live Telemetry HUD
-        hud_label: "LIVE TELEMETRY:",
+        hud_label: "TELEMETRY:",
         hud_t1: "FEA ERP • MES • 99.99% UPTIME",
         hud_t2: "LIVE DB: 10.17.215.22 • LINKED SERVER ACTIVE",
         hud_t3: "AGP CLICKONCE • 500+ TERMINALS • 0 DOWNTIME",
@@ -238,7 +258,8 @@ const translations = {
         hud_t5: "RFID SCANNER ENGINE • LATENCY < 80ms",
         hud_t6: "ARCHITECTURE: ZERO-SPECIALIZED-CASE",
 
-        // Impact Stats Ribbon
+        // Impact Stats
+        metrics_tag: "01 // PRODUCTION TELEMETRY & BENCHMARKS",
         metrics_heading: "Production Impact Metrics & Real-World Telemetry",
         metrics_sub: "Directly measured from international garment manufacturing operations and autonomous AI agent workflows",
         stat_commits_num: "30,000+",
@@ -271,40 +292,53 @@ const translations = {
         stat_efficiency_desc: "AutoSewingPlan reduced scheduling from 2 days -> 15m",
         stat_efficiency_badge: "AutoSewingPlan",
 
+        // Dual Charts
+        chart_commit_title: "30,000+ Commits Breakdown by Platform",
+        chart_commit_sub: "Codebase contribution distribution across flagship systems at FEAVN",
+        chart_delta_title: "Performance Optimization Benchmarks (Before vs. After)",
+        chart_delta_sub: "Measured processing speed gains after architectural refactoring & AI Multi-Agent integration",
+        delta_1_name: "Automated Sewing Line Scheduling (PPS AutoSewingPlan)",
+        delta_1_val: "2 Days → 15 Mins (-99%)",
+        delta_2_name: "Smart Fabric Warehouse Inventory Speed (UHF RFID)",
+        delta_2_val: "+70% Audit Speed",
+        delta_3_name: "BA Spec Analysis & Code Review Overhead (DrakeAgent MCP)",
+        delta_3_val: "-65% Overhead",
+        delta_4_name: "Distributed Reporting Query Latency (Linked Server Tuning)",
+        delta_4_val: "-40% Latency",
+
         // Summary
         summary_heading: "Architectural Doctrine & Engineering Philosophy",
         summary_text: "I champion the <strong>\"Zero-Specialized-Case\"</strong> principle: rejecting fragmented ad-hoc patches in favor of resilient, generalized architectural abstractions to prevent technical debt. Backed by <strong>30,000+ production commits</strong> in high-concurrency international garment manufacturing operations, I leverage <strong>Autonomous AI Multi-Agents via Model Context Protocol (MCP)</strong> across daily engineering: from BA requirement extraction and live database introspection to SQL transaction gatekeeping and automated QA matrix generation.",
 
         // Interactive Ecosystem Architecture Map
-        eco_heading: "Enterprise Architecture Ecosystem Topology",
-        eco_sub: "Interconnected network map between Enterprise ERP Core, Distributed Databases, Floor IoT & Autonomous AI Agent Hub",
+        eco_tag: "02 // ARCHITECTURE TOPOLOGY & LIVE FLOW SIMULATOR",
+        eco_heading: "Interactive Enterprise Architecture Topology",
+        eco_sub: "Click any Node or trigger a Stress Test Simulation to inspect real-time data packet routing",
+        sim_btn_run: "⚡ Simulate Live Production Data Flow",
+        sim_status_ready: "STATUS: READY FOR SIMULATION",
         eco_node_erp: "FEA ERP CORE",
-        eco_node_erp_sub: "C# .NET • SQL Tuning",
+        eco_node_erp_sub: "C# .NET • SQL Tuning • 7,550+ Commits",
         eco_node_db: "LINKED SERVER DB",
-        eco_node_db_sub: "10.17.215.22 • ACID Locks",
+        eco_node_db_sub: "10.17.215.22 • ACID Locks • Cross-Plant",
         eco_node_agp: "AGP CLICKONCE",
-        eco_node_agp_sub: "500+ Workstations",
+        eco_node_agp_sub: "500+ Workstations • Zero Downtime",
         eco_node_pps: "PPS ALGO ENGINE",
-        eco_node_pps_sub: "AutoSewingPlan • 92% Line",
+        eco_node_pps_sub: "AutoSewingPlan • 92% Line Capacity",
         eco_node_mobile: "ITS.MOBILE & QC",
-        eco_node_mobile_sub: "Microservices • <80ms",
+        eco_node_mobile_sub: "Microservices • 500K+ Scans/Day",
         eco_node_rfid: "RFID & FABRIC WAREHOUSE",
-        eco_node_rfid_sub: "Zebra • Impinj Gateway",
+        eco_node_rfid_sub: "Zebra SDK • Impinj Speedway • ZPL",
         eco_node_ai: "DRAKE AGENT & MCP",
-        eco_node_ai_sub: "AI Multi-Agent Hub",
-        eco_hint: "✦ Click on any architecture node to inspect technical stack & operational metrics",
+        eco_node_ai_sub: "Autonomous Multi-Agent SDLC Hub",
 
         // AI Multi-Agent SDLC Pipeline Infographic
+        ai_tag: "03 // AI MULTI-AGENT ECOSYSTEM & LIVE MCP CONSOLE",
         ai_pipeline_heading: "Autonomous Multi-Agent SDLC Pipeline Infographic",
-        ai_pipeline_sub: "Production-grade autonomous workflows running daily via Model Context Protocol (MCP), connected directly to live enterprise infrastructure",
-        step1_title: "1. BA/SA Requirement Extraction",
-        step1_desc: "AI automatically parses and extracts 100% of business flowcharts from Excel, Word, PPTX specs",
+        ai_pipeline_sub: "Explore the 4 autonomous SDLC stages or execute live MCP commands in the interactive terminal simulator",
+        step1_title: "1. BA/SA Spec Extraction",
         step2_title: "2. Deep DB Introspection (analyze_task)",
-        step2_desc: "Direct schema, index & active Stored Procedure inspection on live DB 10.17.215.22 prior to coding",
         step3_title: "3. Quality & Security Gate (check_code_change)",
-        step3_desc: "Enforces BEGIN TRAN/COMMIT blocks, suppresses raw exceptions, ensures idempotency & UTF-8 BOM",
         step4_title: "4. Automated QA Dispatch (create_test_task)",
-        step4_desc: "Auto-creates Jira Subtasks with edge Test Matrices, mock datasets, safe rollback logic & ChatOps",
 
         ai_c1_title: "Multi-Agent Infrastructure & Custom MCP Servers",
         ai_c1_badge: "Custom MCP",
@@ -331,9 +365,10 @@ const translations = {
         ai_c4_b3: "<strong>ChatOps Handover:</strong> Transitions task to In Review & notifies designated QA testers via Mattermost",
 
         // Systems Showcase
+        sys_tag: "04 // MISSION-CRITICAL PRODUCTION SYSTEMS",
         systems_heading: "Flagship Architecture & Production Systems",
         systems_sub: "6 core enterprise platforms engineered and deployed across international manufacturing operations",
-        filter_all: "All",
+        filter_all: "All Systems (6)",
         filter_erp: "ERP & Backend",
         filter_ai: "AI & Automation",
         filter_iot: "IoT & Mobile",
@@ -368,15 +403,19 @@ const translations = {
         sys6_desc: "Next-generation intelligent agent platform via Model Context Protocol (MCP). Automates requirement analysis, Merge Request code reviews, SQL release script verification, and DevOps pipelines.",
         sys6_impact: "<strong>Production Reality:</strong> Slashed technical analysis overhead by 65% and eliminated 100% of production SQL release conflicts.",
 
-        // Skills (Real Stack)
-        skills_heading: "Core Competencies & Technology Arsenal",
-        skills_sub: "Battle-tested technology matrix verified over 30,000+ real production commits",
+        // Skills & Radar
+        skills_tag: "05 // COMPETENCY RADAR & TECHNOLOGY ARSENAL",
+        skills_heading: "Engineering Radar & Technology Arsenal",
+        skills_sub: "Multi-dimensional competency matrix verified over 30,000+ real production commits",
+        radar_card_title: "Core Architecture Radar",
+        radar_card_sub: "Hover over skill clusters on the right to morph radar weights",
         skill_c1_title: "Architecture & System Design",
         skill_c2_title: "Backend & Database Engineering",
         skill_c3_title: "AI Multi-Agent & Engineering Automation",
         skill_c4_title: "Industrial IoT & Enterprise UI",
 
         // Experience Section
+        exp_tag: "06 // CAREER TRAJECTORY & ARCHITECTURAL DOCTRINE",
         exp_heading: "Professional Experience & Technical Leadership",
         exp_sub: "Track record of architectural leadership and mission-critical production operations",
         exp_r1_title: "Lead Software Architect & Tech Lead",
@@ -399,7 +438,7 @@ const translations = {
 
         // Education
         edu_heading: "Education & Credentials",
-        edu_degree: "Bachelor of Information Technology / Software Engineering",
+        edu_degree: "Bachelor of Information Technology / Software Engineering (Honors)",
         edu_school: "Thu Dau Mot University (TDMU) • Digital Technology Institute",
         edu_period: "(2018 — 2022)",
         edu_desc: "Major in Software Engineering & Information Systems. Graduated with Honors. In-depth focus on Data Structures & Algorithms, Distributed Systems, and Advanced Database Management.",
@@ -410,42 +449,28 @@ const translations = {
     }
 };
 
-// Global Language Application Function
 function applyLanguage(lang) {
     const targetLang = (lang === 'en' || lang === 'vi') ? lang : 'vi';
     localStorage.setItem('drake_lang', targetLang);
     document.documentElement.lang = targetLang;
 
-    // Update active switcher buttons
-    const buttons = document.querySelectorAll('.lang-btn');
-    buttons.forEach(btn => {
-        if (btn.getAttribute('data-lang') === targetLang) {
-            btn.classList.add('active');
-        } else {
-            btn.classList.remove('active');
-        }
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === targetLang);
     });
 
     const dict = translations[targetLang];
     if (!dict) return;
 
-    // Update text content
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (dict[key]) {
-            el.textContent = dict[key];
-        }
+        if (dict[key]) el.textContent = dict[key];
     });
 
-    // Update HTML content
     document.querySelectorAll('[data-i18n-html]').forEach(el => {
         const key = el.getAttribute('data-i18n-html');
-        if (dict[key]) {
-            el.innerHTML = dict[key];
-        }
+        if (dict[key]) el.innerHTML = dict[key];
     });
 
-    // Update URL param without page reload
     if (window.history && window.history.replaceState) {
         const url = new URL(window.location);
         url.searchParams.set('lang', targetLang);
@@ -453,30 +478,18 @@ function applyLanguage(lang) {
     }
 }
 
-// Initialize on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
     const docLang = document.documentElement.getAttribute('lang') || 'vi';
     const urlParams = new URLSearchParams(window.location.search);
     const urlLang = urlParams.get('lang');
     const savedLang = localStorage.getItem('drake_lang');
-    const browserLang = (navigator.language && navigator.language.startsWith('en')) ? 'en' : 'vi';
 
-    let initialLang = urlLang;
-    if (!initialLang) {
-        if (docLang === 'en') {
-            initialLang = 'en';
-        } else {
-            initialLang = savedLang || browserLang || docLang;
-        }
-    }
-
+    let initialLang = urlLang || (docLang === 'en' ? 'en' : (savedLang || docLang));
     applyLanguage(initialLang);
 
-    // Attach click listeners to language switch buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => {
-            const chosenLang = btn.getAttribute('data-lang');
-            applyLanguage(chosenLang);
+            applyLanguage(btn.getAttribute('data-lang'));
         });
     });
 });
